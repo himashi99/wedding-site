@@ -1,0 +1,124 @@
+.hero-container {
+    height: 100vh;
+    min-height: 700px;
+
+    .hero-image {
+        width: 100%;
+        height: calc(100vh - 50px);
+        left: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+
+        .names {
+            position: relative;
+            top: 4em;
+        }
+    }
+}
+
+header {
+    .navigation {
+        min-height: 70px;
+
+        .nav-links {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            ul {
+                margin-right: 4em;
+
+                li {
+                    margin-right: 2em;
+                }
+            }
+        }
+    }
+
+    .pin-top {
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+
+    .pin-top::after {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+    }
+
+    .pin-bottom {
+        position: relative;
+    }
+}
+
+header::after {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 2px;
+}
+
+.bride-groom {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+
+    .bride-groom-container {
+        width: 1140px;
+        height: 912px;
+        margin: 90px 130px 110px 130px;
+        background-color: #000033;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+
+        .groom-photo {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        .groom-about {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bride-about {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bride-photo {
+          grid-column-start: 2;
+          grid-column-end: 3;
+          grid-row-start: 2;
+          grid-row-end: 3;
+          background: url(https://res.cloudinary.com/dzz2aiwnj/image/upload/v1533182881/alvin-mahmudov-172241-unsplash.jpg) center center/cover no-repeat local;
+        }
+
+        .groom-about-para, .bride-about-para {
+            width: 100%;
+            padding: 2em 4em 2em 4em;
+        }
+
+        .groom-about-para p, .bride-about-para p {
+            margin-top: 1.5em;
+        }
+    }
+}

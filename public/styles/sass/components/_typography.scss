@@ -1,0 +1,28 @@
+.names {
+    font-family: 'Sacramento', cursive;
+    font-size: 2.5em;
+    color: $gold;
+}
+
+li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    color: $golden-nav;    
+}
+
+.groom-about-para h2, .bride-about-para h2{
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+}
+
+.groom-about-para p, .bride-about-para p {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.1em;
+  line-height: 1.8em;
+}
+
+.groom-about-para span, .bride-about-para span {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.8em;
+}
