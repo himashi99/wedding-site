@@ -89,6 +89,43 @@ header::after {
     .bride-groom .bride-groom-container .groom-about-para p, .bride-groom .bride-groom-container .bride-about-para p {
       margin-top: 1.5em; }
 
+.wedding-events {
+  height: 800px; }
+  .wedding-events .love-birds {
+    display: flex;
+    justify-content: center; }
+  .wedding-events .section-title-container {
+    display: flex;
+    justify-content: center; }
+    .wedding-events .section-title-container .section-title {
+      display: inline-block;
+      padding: 0.3em 1em; }
+  .wedding-events .wedding-event-info {
+    margin: 100px 250px 100px 250px; }
+    .wedding-events .wedding-event-info .ceremony, .wedding-events .wedding-event-info .reception {
+      display: flex; }
+      .wedding-events .wedding-event-info .ceremony .ceremony-photo, .wedding-events .wedding-event-info .ceremony .reception-photo, .wedding-events .wedding-event-info .reception .ceremony-photo, .wedding-events .wedding-event-info .reception .reception-photo {
+        margin-right: 4em; }
+      .wedding-events .wedding-event-info .ceremony .ceremony-photo, .wedding-events .wedding-event-info .reception .ceremony-photo {
+        margin-bottom: 3em; }
+      .wedding-events .wedding-event-info .ceremony .ceremony-info h3, .wedding-events .wedding-event-info .ceremony .reception-info h3, .wedding-events .wedding-event-info .reception .ceremony-info h3, .wedding-events .wedding-event-info .reception .reception-info h3 {
+        margin: 0 0 0.9em; }
+      .wedding-events .wedding-event-info .ceremony .address, .wedding-events .wedding-event-info .ceremony .date, .wedding-events .wedding-event-info .reception .address, .wedding-events .wedding-event-info .reception .date {
+        position: relative; }
+      .wedding-events .wedding-event-info .ceremony .address, .wedding-events .wedding-event-info .reception .address {
+        margin-bottom: 0.5em; }
+        .wedding-events .wedding-event-info .ceremony .address span, .wedding-events .wedding-event-info .reception .address span {
+          padding-left: 22px;
+          margin-bottom: 2em; }
+      .wedding-events .wedding-event-info .ceremony .date span, .wedding-events .wedding-event-info .reception .date span {
+        padding-left: 18px; }
+      .wedding-events .wedding-event-info .ceremony .wedding-info, .wedding-events .wedding-event-info .reception .wedding-info {
+        margin-top: 1.5em;
+        margin-bottom: 1.5em; }
+      .wedding-events .wedding-event-info .ceremony a, .wedding-events .wedding-event-info .reception a {
+        display: inline-block;
+        margin-top: 5px; }
+
 .names {
   font-family: 'Sacramento', cursive;
   font-size: 2.5em;
@@ -112,6 +149,39 @@ li {
 .groom-about-para span, .bride-about-para span {
   font-family: 'Great Vibes', cursive;
   font-size: 1.8em; }
+
+.section-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.6em;
+  letter-spacing: 5px;
+  color: #daa520; }
+
+.ceremony-info h3, .reception-info h3 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #000033;
+  text-transform: uppercase; }
+
+.address, .date {
+  font-family: "Dosis", sans-serif;
+  font-size: 0.88889em;
+  color: #a9a9a9; }
+  .address .fas, .address .far, .date .fas, .date .far {
+    color: #daa520; }
+
+.wedding-info {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.1em;
+  color: #767878;
+  line-height: 1.8em; }
+
+a {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.1em;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  color: #daa520; }
 
 .hero-image {
   background: url(https://res.cloudinary.com/dzz2aiwnj/image/upload/v1533132631/cave-image.jpg) center center/cover no-repeat local;
@@ -143,5 +213,9 @@ header::after {
     text-align: right; }
   .bride-groom-container .groom-about-para h2, .bride-groom-container .groom-about-para p, .bride-groom-container .bride-about-para h2, .bride-groom-container .bride-about-para p {
     color: darkgray; }
+
+.section-title {
+  border-top: 1px solid #000033;
+  border-bottom: 1px solid #000033; }
 
 /*# sourceMappingURL=styles.css.map */

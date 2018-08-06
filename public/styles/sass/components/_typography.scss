@@ -26,3 +26,43 @@ li {
     font-family: 'Great Vibes', cursive;
     font-size: 1.8em;
 }
+
+.section-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.6em;
+    letter-spacing: 5px;
+    color: $gold;
+}
+
+.ceremony-info h3, .reception-info h3 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: $dark-navy;
+    text-transform: uppercase;
+}
+
+.address, .date {
+    font-family: "Dosis", sans-serif;
+    font-size: 0.88889em;
+    color: $medium-gray;
+
+    .fas, .far {
+        color: $gold;
+    }
+}
+
+.wedding-info {
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.1em;
+    color: $darkest-gray;
+    line-height: 1.8em;
+}
+
+a {
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    color: $gold; 
+}

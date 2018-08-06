@@ -122,3 +122,70 @@ header::after {
         }
     }
 }
+
+
+.wedding-events {
+    height: 800px;
+
+    .love-birds {
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-title-container {
+        display: flex;
+        justify-content: center;
+
+        .section-title {
+            display: inline-block;
+            padding: 0.3em 1em; 
+        }
+    }
+
+    .wedding-event-info {
+        margin: 100px 250px 100px 250px;
+
+        .ceremony, .reception {
+            display: flex;
+
+            .ceremony-photo, .reception-photo {
+                margin-right: 4em;
+            }
+
+            .ceremony-photo {
+                margin-bottom: 3em;
+            }
+
+            .ceremony-info h3, .reception-info h3 {
+                margin: 0 0 0.9em;
+            }
+
+            .address, .date {
+                position: relative;
+            }
+
+            .address {
+                margin-bottom: 0.5em;
+
+                span {
+                    padding-left: 22px;
+                    margin-bottom: 2em;
+                }
+            }
+
+            .date span {
+                padding-left: 18px;
+            }
+
+            .wedding-info {
+                margin-top: 1.5em;
+                margin-bottom: 1.5em;
+            }
+
+            a {
+                display: inline-block;
+                margin-top: 5px;
+            }
+        }
+    }
+}
