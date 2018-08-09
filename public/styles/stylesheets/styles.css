@@ -12,8 +12,10 @@
     display: flex;
     justify-content: center; }
     .hero-container .hero-image .names {
+      height: 260px;
+      text-align: center;
       position: relative;
-      top: 4em; }
+      top: 8em; }
 
 header .navigation {
   min-height: 70px; }
@@ -89,8 +91,97 @@ header::after {
     .bride-groom .bride-groom-container .groom-about-para p, .bride-groom .bride-groom-container .bride-about-para p {
       margin-top: 1.5em; }
 
+.love-story {
+  padding-top: 90px;
+  background-color: #fafafa; }
+  .love-story .love-birds {
+    display: flex;
+    justify-content: center; }
+  .love-story .section-title-container {
+    display: flex;
+    justify-content: center; }
+    .love-story .section-title-container .section-title {
+      display: inline-block;
+      padding: 0.3em 1em; }
+  .love-story ul::before {
+    content: '';
+    width: 2px;
+    height: 1455px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ededed; }
+  .love-story ul {
+    margin-top: 100px;
+    margin-bottom: 24px;
+    margin-left: 130px;
+    margin-right: 130px;
+    padding-left: 0;
+    list-style: none; }
+    .love-story ul li {
+      height: 385px;
+      display: flex;
+      justify-content: center;
+      padding-left: 100px;
+      padding-right: 100px; }
+      .love-story ul li .love-story-description h3 {
+        font-family: 'Dosis', sans-serif;
+        font-size: 1.4em; }
+      .love-story ul li .love-story-description .love-story-date {
+        color: #000033;
+        margin-top: 6px;
+        text-transform: none;
+        font-size: 0.9em;
+        font-weight: 700; }
+      .love-story ul li .love-story-description .love-story-paragraph {
+        width: 440px;
+        margin-top: 25px;
+        line-height: 1.8em;
+        font-family: "Dosis", sans-serif;
+        color: #767878;
+        text-transform: none;
+        font-size: 1.2em; }
+      .love-story ul li .love-story-photo {
+        position: relative; }
+        .love-story ul li .love-story-photo span {
+          position: absolute;
+          top: -10%;
+          background-color: #cee0dd;
+          width: 43px;
+          height: 43px;
+          line-height: 41px;
+          text-align: center;
+          border: 2px solid #cee0dd;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -o-border-radius: 50%;
+          -ms-border-radius: 50%;
+          border-radius: 50%; }
+    .love-story ul li::first-child {
+      margin-top: 100px; }
+    .love-story ul li:nth-child(odd) {
+      text-align: right; }
+      .love-story ul li:nth-child(odd) .love-story-description {
+        margin-right: 45px; }
+      .love-story ul li:nth-child(odd) .love-story-photo {
+        margin-left: 45px; }
+        .love-story ul li:nth-child(odd) .love-story-photo span {
+          right: 105%; }
+    .love-story ul li:nth-child(even) {
+      flex-direction: row-reverse; }
+      .love-story ul li:nth-child(even) .love-story-description {
+        margin-left: 45px; }
+      .love-story ul li:nth-child(even) .love-story-photo {
+        margin-right: 45px; }
+        .love-story ul li:nth-child(even) .love-story-photo span {
+          left: 105%; }
+  .love-story ul li + li .love-story-description {
+    margin-top: 45px; }
+
 .wedding-events {
-  height: 800px; }
+  height: 800px;
+  padding-top: 90px;
+  padding-bottom: 110px; }
   .wedding-events .love-birds {
     display: flex;
     justify-content: center; }
@@ -126,10 +217,25 @@ header::after {
         display: inline-block;
         margin-top: 5px; }
 
-.names {
-  font-family: 'Sacramento', cursive;
-  font-size: 2.5em;
-  color: #daa520; }
+.names h1 {
+  font-family: 'Great Vibes', cursive;
+  color: gainsboro;
+  letter-spacing: 0.05em;
+  font-size: 6em; }
+.names span {
+  background-color: goldenrod; }
+.names h2 {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.6em;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 12px 20px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  font-weight: 500; }
 
 li {
   font-family: 'Open Sans', sans-serif;
@@ -184,15 +290,15 @@ a {
   color: #daa520; }
 
 .hero-image {
-  background: url(https://res.cloudinary.com/dzz2aiwnj/image/upload/v1533132631/cave-image.jpg) center center/cover no-repeat local;
-  opacity: 0.7; }
+  background: url(https://res.cloudinary.com/dzz2aiwnj/image/upload/v1533132631/cave-image.jpg) center center/cover no-repeat local; }
 
 header::after {
   content: "";
   background: #ececec; }
 
 .navigation {
-  background-color: #fff; }
+  background-color: #fff;
+  z-index: 1; }
   .navigation ul {
     list-style: none; }
     .navigation ul li {

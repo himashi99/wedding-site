@@ -11,8 +11,10 @@
         justify-content: center;
 
         .names {
+            height: 260px;
+            text-align: center;
             position: relative;
-            top: 4em;
+            top: 8em;
         }
     }
 }
@@ -123,9 +125,155 @@ header::after {
     }
 }
 
+.love-story {
+  // height: 2000px;
+    padding-top: 90px;
+    background-color: #fafafa;
+
+
+    .love-birds {
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-title-container {
+        display: flex;
+        justify-content: center;
+
+        .section-title {
+            display: inline-block;
+            padding: 0.3em 1em; 
+        }
+    }
+
+    ul::before {
+        content: '';
+        width: 2px;
+        height: 1455px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #ededed;
+    }
+
+    ul {
+      margin-top: 100px;
+      margin-bottom: 24px;
+      margin-left: 130px;
+      margin-right: 130px;
+      padding-left: 0;
+      list-style: none;
+
+        li {
+            height: 385px;
+            display: flex;
+            justify-content: center;
+            padding-left: 100px;
+            padding-right: 100px;
+
+            
+            .love-story-description {
+                h3 {
+                  font-family: 'Dosis', sans-serif;
+                  font-size: 1.4em;
+                }
+
+                .love-story-date {
+                    color: #000033;
+                    margin-top: 6px;
+                    text-transform: none;
+                    font-size: 0.9em;
+                    font-weight: 700;
+                }
+
+                .love-story-paragraph {
+                    width: 440px;
+                    margin-top: 25px;
+                    line-height: 1.8em;
+                    font-family: "Dosis", sans-serif;
+                    color: #767878;
+                    text-transform: none;
+                    font-size: 1.2em;
+                }
+
+
+            }
+
+            .love-story-photo {
+                position: relative;
+                // z-index: -1;
+
+                span {
+                    position: absolute;
+                    top: -10%;
+                    background-color: #cee0dd;
+                    width: 43px;
+                    height: 43px;
+                    line-height: 41px;
+                    text-align: center;
+                    border: 2px solid #cee0dd;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    border-radius: 50%;
+                    // z-index: 10;
+                }                       
+            }     
+        }
+        
+        li::first-child {
+            margin-top: 100px;
+        }
+
+
+        li:nth-child(odd) {
+            text-align: right;
+
+          .love-story-description {
+              margin-right: 45px;
+          }
+          .love-story-photo {
+              margin-left: 45px;
+
+              span {
+                  right: 105%;
+              } 
+
+          }
+        }
+
+        li:nth-child(even) {
+            flex-direction: row-reverse;
+
+          .love-story-description {
+              margin-left: 45px;
+          }
+          .love-story-photo {
+              margin-right: 45px;
+
+              span {
+                  left: 105%;
+              }
+          }
+        } 
+    }
+
+    // selects all but first list item
+     ul li + li {
+            .love-story-description {
+                margin-top: 45px;
+            }
+
+    }
+}
+
+
 
 .wedding-events {
     height: 800px;
+    padding-top: 90px;
+    padding-bottom: 110px;
 
     .love-birds {
         display: flex;
