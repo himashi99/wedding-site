@@ -91,9 +91,52 @@ header::after {
     .bride-groom .bride-groom-container .groom-about-para p, .bride-groom .bride-groom-container .bride-about-para p {
       margin-top: 1.5em; }
 
+.countdown-timer {
+  width: 100%;
+  height: 370px; }
+  .countdown-timer .countdown-timer-background {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: url(https://res.cloudinary.com/dzz2aiwnj/image/upload/v1533825638/car3.jpg) center center/cover no-repeat local;
+    padding-left: 3em;
+    padding-right: 3em; }
+    .countdown-timer .countdown-timer-background .fun-begins-text {
+      position: relative;
+      top: 0.4em;
+      font-family: 'Niconne', cursive; }
+    .countdown-timer .countdown-timer-background .timer {
+      display: flex;
+      justify-content: space-between;
+      width: 620px;
+      height: 114px;
+      position: relative;
+      top: 2em; }
+      .countdown-timer .countdown-timer-background .timer .timer-box {
+        width: 128px;
+        height: 79px;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 0.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.3em;
+        border: 5px solid rgba(0, 0, 0, 0.1);
+        border-radius: 5px; }
+        .countdown-timer .countdown-timer-background .timer .timer-box .timer-number {
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .countdown-timer .countdown-timer-background .timer .timer-box .timer-number p {
+            font-size: 2em;
+            color: goldenrod;
+            font-family: 'Cousine', monospace; }
+        .countdown-timer .countdown-timer-background .timer .timer-box .timer-label {
+          color: #909c9a; }
+
 .love-story {
-  padding-top: 90px;
-  background-color: #fafafa; }
+  padding-top: 90px; }
   .love-story .love-birds {
     display: flex;
     justify-content: center; }
@@ -217,6 +260,27 @@ header::after {
         display: inline-block;
         margin-top: 5px; }
 
+.quote-section {
+  width: 100%;
+  height: 370px; }
+  .quote-section .quote-background {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: url(https://res.cloudinary.com/dzz2aiwnj/image/upload/v1533858274/cropwall-faded.jpg) center center/cover no-repeat local;
+    padding-left: 3em;
+    padding-right: 3em; }
+    .quote-section .quote-background .quote-text {
+      font-size: 1.5em;
+      width: 35em;
+      color: mistyrose;
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.3;
+      letter-spacing: 0.07em; }
+      .quote-section .quote-background .quote-text .seuss {
+        margin-top: 0.7em;
+        margin-left: 0.7em; }
+
 .names h1 {
   font-family: 'Great Vibes', cursive;
   color: gainsboro;
@@ -254,6 +318,11 @@ li {
 .groom-about-para span, .bride-about-para span {
   font-family: 'Great Vibes', cursive;
   font-size: 1.8em; }
+
+.fun-begins-text {
+  font-size: 5em;
+  font-family: 'Lovers Quarrel', cursive;
+  color: lightgray; }
 
 .section-title {
   font-family: 'Great Vibes', cursive;
@@ -322,5 +391,8 @@ header::after {
 .section-title {
   border-top: 1px solid #000033;
   border-bottom: 1px solid #000033; }
+
+.wedding-events {
+  background-color: #f6f6f6; }
 
 /*# sourceMappingURL=styles.css.map */
