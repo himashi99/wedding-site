@@ -15,7 +15,7 @@
       height: 260px;
       text-align: center;
       position: relative;
-      top: 8em; }
+      top: 6.5em; }
 
 header .navigation {
   min-height: 70px; }
@@ -221,12 +221,11 @@ header::after {
   font-family: 'Great Vibes', cursive;
   color: gainsboro;
   letter-spacing: 0.05em;
-  font-size: 6em; }
-.names span {
-  background-color: goldenrod; }
+  font-size: 7em;
+  text-shadow: 1px 1px 2px rgba(0, 4, 3, 0.6); }
 .names h2 {
   font-family: "Dosis", sans-serif;
-  font-size: 1.6em;
+  font-size: 1.7em;
   color: #fff;
   text-transform: uppercase;
   margin: 0;
@@ -290,7 +289,7 @@ a {
   color: #daa520; }
 
 .hero-image {
-  background: url(https://res.cloudinary.com/dzz2aiwnj/image/upload/v1533132631/cave-image.jpg) center center/cover no-repeat local; }
+  background: url(https://res.cloudinary.com/dzz2aiwnj/image/upload/v1533787731/cropped.jpg) center center/cover no-repeat local; }
 
 header::after {
   content: "";
