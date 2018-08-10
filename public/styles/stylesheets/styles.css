@@ -105,7 +105,7 @@ header::after {
     .countdown-timer .countdown-timer-background .fun-begins-text {
       position: relative;
       top: 0.4em;
-      font-family: 'Niconne', cursive; }
+      font-family: 'Great Vibes', cursive; }
     .countdown-timer .countdown-timer-background .timer {
       display: flex;
       justify-content: space-between;
@@ -267,16 +267,17 @@ header::after {
     height: 100%;
     display: flex;
     align-items: center;
-    background: url(https://res.cloudinary.com/dzz2aiwnj/image/upload/v1533858274/cropwall-faded.jpg) center center/cover no-repeat local;
+    background: url(https://res.cloudinary.com/dzz2aiwnj/image/upload/v1533851015/cropwall_copy.jpg) center center/cover no-repeat local;
     padding-left: 3em;
     padding-right: 3em; }
     .quote-section .quote-background .quote-text {
-      font-size: 1.5em;
-      width: 35em;
+      font-size: 1.6em;
+      font-weight: 700;
+      width: 30em;
       color: mistyrose;
-      font-family: 'Montserrat', sans-serif;
-      line-height: 1.3;
-      letter-spacing: 0.07em; }
+      font-family: 'Shadows Into Light', cursive;
+      line-height: 1.5;
+      letter-spacing: 0.05em; }
       .quote-section .quote-background .quote-text .seuss {
         margin-top: 0.7em;
         margin-left: 0.7em; }
@@ -320,7 +321,7 @@ li {
   font-size: 1.8em; }
 
 .fun-begins-text {
-  font-size: 5em;
+  font-size: 4em;
   font-family: 'Lovers Quarrel', cursive;
   color: lightgray; }
 
