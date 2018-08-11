@@ -66,3 +66,18 @@ function countDown() {
 }
 
 countDown();
+
+// // Countdown Timer Scroll
+// let ypos;
+// let image;
+
+// function parallax() {
+//     ypos = window.pageYOffset;
+//     image = document.getElementById('image');
+//     image.style
+// }
+// window.addEventListener('scroll', parallax);
+
+
+
+
