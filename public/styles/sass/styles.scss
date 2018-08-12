@@ -79,14 +79,31 @@ header::after {
 
     .question-title {
         font-family: 'Dosis', sans-serif;
-        font-size: 16px;
+        font-size: 1.1em;
         font-weight: bold;  
-        color: #767878;         
+        color: #767878; 
+        cursor: pointer;        
     }
     
-    .question-answer {
+    .question-answer-hide, .question-answer-show {
         font-family: 'Raleway', sans-serif;
-        font-size: 15px;
+        font-size: 1em;
         color: #767878;
+        margin-top: 20px;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+        
+    }
+
+    .question-answer-hide {
+        height: 0px;
+        opacity: 0;
+    }
+
+    .question-answer-show {
+        height: 57px;
+        opaicty: 1;
     }
 }

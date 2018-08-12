@@ -302,7 +302,7 @@ header::after {
           justify-content: space-between; }
         .faq .questions-and-answers-container .questions-and-answers .question-container .question-answer {
           margin-top: 20px;
-          padding-right: 30px; }
+          padding-right: 35px; }
 
 .names h1 {
   font-family: 'Great Vibes', cursive;
@@ -428,12 +428,24 @@ header::after {
   border-color: rgba(204, 204, 204, 0.6885245902); }
   .question-container .question-title {
     font-family: 'Dosis', sans-serif;
-    font-size: 16px;
+    font-size: 1.1em;
     font-weight: bold;
-    color: #767878; }
-  .question-container .question-answer {
+    color: #767878;
+    cursor: pointer; }
+  .question-container .question-answer-hide, .question-container .question-answer-show {
     font-family: 'Raleway', sans-serif;
-    font-size: 15px;
-    color: #767878; }
+    font-size: 1em;
+    color: #767878;
+    margin-top: 20px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
+  .question-container .question-answer-hide {
+    height: 0px;
+    opacity: 0; }
+  .question-container .question-answer-show {
+    height: 57px;
+    opaicty: 1; }
 
 /*# sourceMappingURL=styles.css.map */

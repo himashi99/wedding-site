@@ -78,6 +78,19 @@ countDown();
 // }
 // window.addEventListener('scroll', parallax);
 
+// FAQ Show Answers
 
+document.getElementById("arrow-down").onclick = function() {
+  var elements = document.getElementById("test");
 
+    if (elements.classList.contains("question-answer-hide")) {
 
+      console.log("whooho")
+      elements.classList.add("question-answer-show");
+      elements.classList.remove("question-answer-hide");
+
+    } else {
+      elements.classList.add("question-answer-hide");
+      elements.classList.remove("question-answer-show");
+    }
+}
