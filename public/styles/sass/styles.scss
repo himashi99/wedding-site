@@ -65,3 +65,28 @@ header::after {
 .wedding-events {
   background-color: #f6f6f6;
 }
+
+.faq-title h1 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.7em;
+    font-weight: 100;
+    color: goldenrod;
+}
+
+.question-container {
+    border-bottom: 2px solid;
+    border-color: rgba(204,204,204,0.6885245901639344);
+
+    .question-title {
+        font-family: 'Dosis', sans-serif;
+        font-size: 16px;
+        font-weight: bold;  
+        color: #767878;         
+    }
+    
+    .question-answer {
+        font-family: 'Raleway', sans-serif;
+        font-size: 15px;
+        color: #767878;
+    }
+}

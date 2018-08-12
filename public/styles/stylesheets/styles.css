@@ -282,6 +282,28 @@ header::after {
         margin-top: 0.7em;
         margin-left: 0.7em; }
 
+.faq {
+  margin-top: 90px; }
+  .faq .faq-title {
+    display: flex;
+    justify-content: center; }
+  .faq .questions-and-answers-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 230px;
+    margin-right: 230px;
+    margin-top: 50px; }
+    .faq .questions-and-answers-container .questions-and-answers {
+      width: 680px; }
+      .faq .questions-and-answers-container .questions-and-answers .question-container {
+        padding: 25px 0 25px 10px; }
+        .faq .questions-and-answers-container .questions-and-answers .question-container .question-title {
+          display: flex;
+          justify-content: space-between; }
+        .faq .questions-and-answers-container .questions-and-answers .question-container .question-answer {
+          margin-top: 20px;
+          padding-right: 30px; }
+
 .names h1 {
   font-family: 'Great Vibes', cursive;
   color: gainsboro;
@@ -394,5 +416,24 @@ header::after {
 
 .wedding-events {
   background-color: #f6f6f6; }
+
+.faq-title h1 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.7em;
+  font-weight: 100;
+  color: goldenrod; }
+
+.question-container {
+  border-bottom: 2px solid;
+  border-color: rgba(204, 204, 204, 0.6885245902); }
+  .question-container .question-title {
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #767878; }
+  .question-container .question-answer {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    color: #767878; }
 
 /*# sourceMappingURL=styles.css.map */

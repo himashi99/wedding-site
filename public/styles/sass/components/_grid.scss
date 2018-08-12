@@ -439,3 +439,40 @@ header::after {
         }
     }
 }
+
+.faq {
+    margin-top: 90px;
+
+    .faq-title {
+        display: flex;
+        justify-content: center;
+    }
+
+    .questions-and-answers-container {
+        display: flex;
+        justify-content: center;
+        margin-left: 230px;
+        margin-right: 230px;
+        margin-top: 50px;
+
+        .questions-and-answers {
+            width: 680px;
+    
+
+            .question-container {
+                padding: 25px 0 25px 10px;
+
+                .question-title {
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                .question-answer {
+                    margin-top: 20px;
+                    padding-right: 30px;
+                }
+            }
+        }
+    }
+}
+
