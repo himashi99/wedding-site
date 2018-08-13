@@ -294,7 +294,7 @@ header::after {
     margin-right: 230px;
     margin-top: 50px; }
     .faq .questions-and-answers-container .questions-and-answers {
-      width: 680px; }
+      width: 700px; }
       .faq .questions-and-answers-container .questions-and-answers .question-container {
         padding: 25px 0 25px 10px; }
         .faq .questions-and-answers-container .questions-and-answers .question-container .question-title {
@@ -432,6 +432,9 @@ header::after {
     font-weight: bold;
     color: #767878;
     cursor: pointer; }
+  .question-container .question-answer {
+    display: flex;
+    align-items: center; }
   .question-container .question-answer-hide, .question-container .question-answer-show {
     font-family: 'Raleway', sans-serif;
     font-size: 1em;

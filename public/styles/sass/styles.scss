@@ -84,6 +84,11 @@ header::after {
         color: #767878; 
         cursor: pointer;        
     }
+
+    .question-answer {
+        display: flex;
+        align-items: center;
+    }
     
     .question-answer-hide, .question-answer-show {
         font-family: 'Raleway', sans-serif;
@@ -94,7 +99,6 @@ header::after {
         -moz-transition: all 0.3s ease-out;
         -o-transition: all 0.3s ease-out;
         transition: all 0.3s ease-out;
-        
     }
 
     .question-answer-hide {
