@@ -116,9 +116,6 @@ for(let i = 0; i < arrowButton.length; i ++) {
     })
   
 
-
-
-
 function showHide() {
     let answersElement = document.getElementById('answersID_' +i)
         // console.log(answers[i].id)

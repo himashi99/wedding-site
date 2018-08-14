@@ -282,6 +282,38 @@ header::after {
         margin-top: 0.7em;
         margin-left: 0.7em; }
 
+.bridal-party {
+  height: 2000px;
+  padding-top: 90px; }
+  .bridal-party .love-birds {
+    display: flex;
+    justify-content: center; }
+  .bridal-party .section-title-container {
+    display: flex;
+    justify-content: center; }
+    .bridal-party .section-title-container .section-title {
+      display: inline-block;
+      padding: 0.3em 1em; }
+  .bridal-party .groomsmen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 100px; }
+    .bridal-party .groomsmen .about-groomsmen {
+      height: 450px;
+      background-color: white;
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+      .bridal-party .groomsmen .about-groomsmen .groomsmen-text {
+        height: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+
 .faq {
   margin-top: 90px; }
   .faq .faq-title {
@@ -415,6 +447,9 @@ header::after {
   border-bottom: 1px solid #000033; }
 
 .wedding-events {
+  background-color: #f6f6f6; }
+
+.bridal-party {
   background-color: #f6f6f6; }
 
 .faq-title h1 {
