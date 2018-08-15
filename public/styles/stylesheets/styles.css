@@ -283,7 +283,6 @@ header::after {
         margin-left: 0.7em; }
 
 .bridal-party {
-  height: 2000px;
   padding-top: 90px; }
   .bridal-party .love-birds {
     display: flex;
@@ -300,7 +299,7 @@ header::after {
     align-items: center;
     flex-wrap: wrap;
     margin-top: 100px;
-    margin-bottom: 100px; }
+    padding-bottom: 100px; }
     .bridal-party .groomsmen .about-groomsmen {
       height: 450px;
       background-color: white;
@@ -313,6 +312,8 @@ header::after {
         display: flex;
         justify-content: center;
         align-items: center; }
+        .bridal-party .groomsmen .about-groomsmen .groomsmen-text .groomsmen-text-container {
+          text-align: center; }
 
 .faq {
   margin-top: 90px; }
@@ -451,6 +452,16 @@ header::after {
 
 .bridal-party {
   background-color: #f6f6f6; }
+  .bridal-party .groomsmen-name {
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    color: goldenrod;
+    font-weight: 600; }
+  .bridal-party .groomsmen-title {
+    font-family: "Dosis", sans-serif;
+    color: #969494;
+    font-size: 0.9em;
+    margin-top: 10px; }
 
 .faq-title h1 {
   font-family: 'Dosis', sans-serif;

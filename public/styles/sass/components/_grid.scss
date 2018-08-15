@@ -441,7 +441,7 @@ header::after {
 }
 
 .bridal-party {
-  height: 2000px;
+    // height: 2000px;
     padding-top: 90px;
     // background-color: #fafafa;
 
@@ -467,7 +467,7 @@ header::after {
         align-items: center;
         flex-wrap: wrap;
         margin-top: 100px;
-        margin-bottom: 100px;
+        padding-bottom: 100px;
 
         .about-groomsmen {
             height: 450px;
@@ -482,6 +482,10 @@ header::after {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                .groomsmen-text-container {
+                    text-align: center;
+                }
             }
         }
     }

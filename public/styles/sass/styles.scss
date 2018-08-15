@@ -68,6 +68,20 @@ header::after {
 
 .bridal-party {
     background-color: #f6f6f6;
+
+    .groomsmen-name {
+        font-family: 'Dosis', sans-serif;
+        text-transform: uppercase;
+        color: goldenrod;
+        font-weight: 600;
+    }
+
+    .groomsmen-title {
+        font-family: "Dosis", sans-serif;
+        color: #969494;
+        font-size: 0.9em;
+        margin-top: 10px;
+    }
 }
 
 
