@@ -293,27 +293,53 @@ header::after {
     .bridal-party .section-title-container .section-title {
       display: inline-block;
       padding: 0.3em 1em; }
-  .bridal-party .groomsmen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 100px;
-    padding-bottom: 100px; }
-    .bridal-party .groomsmen .about-groomsmen {
-      height: 450px;
-      background-color: white;
-      margin-left: 15px;
-      margin-right: 15px;
-      margin-top: 15px;
-      margin-bottom: 15px; }
-      .bridal-party .groomsmen .about-groomsmen .groomsmen-text {
-        height: 160px;
+  .bridal-party .bridal-party-container {
+    margin-top: 100px; }
+    .bridal-party .bridal-party-container .bridal-party-nav {
+      width: 100%;
+      height: 45px;
+      display: flex;
+      justify-content: center; }
+      .bridal-party .bridal-party-container .bridal-party-nav .groomsmen-nav, .bridal-party .bridal-party-container .bridal-party-nav .bridesmaids-nav {
+        background-color: #cee0dd;
+        width: 140px;
+        margin-right: 10px;
+        margin-left: 10px;
         display: flex;
         justify-content: center;
-        align-items: center; }
-        .bridal-party .groomsmen .about-groomsmen .groomsmen-text .groomsmen-text-container {
-          text-align: center; }
+        align-items: center;
+        padding: 10px;
+        border: 3px solid white;
+        border-radius: 5%;
+        cursor: pointer; }
+        .bridal-party .bridal-party-container .bridal-party-nav .groomsmen-nav p, .bridal-party .bridal-party-container .bridal-party-nav .bridesmaids-nav p {
+          text-transform: uppercase;
+          color: #b88c03;
+          font-family: 'Dosis', sans-serif;
+          font-weight: 600; }
+      .bridal-party .bridal-party-container .bridal-party-nav .groomsmen-nav:hover, .bridal-party .bridal-party-container .bridal-party-nav .bridesmaids-nav:hover {
+        background-color: #9fc2bc; }
+    .bridal-party .bridal-party-container .groomsmen, .bridal-party .bridal-party-container .bridesmaids {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 60px;
+      padding-bottom: 100px; }
+      .bridal-party .bridal-party-container .groomsmen .about-groomsmen, .bridal-party .bridal-party-container .groomsmen .about-bridesmaids, .bridal-party .bridal-party-container .bridesmaids .about-groomsmen, .bridal-party .bridal-party-container .bridesmaids .about-bridesmaids {
+        height: 450px;
+        background-color: white;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px; }
+        .bridal-party .bridal-party-container .groomsmen .about-groomsmen .groomsmen-text, .bridal-party .bridal-party-container .groomsmen .about-bridesmaids .groomsmen-text, .bridal-party .bridal-party-container .bridesmaids .about-groomsmen .groomsmen-text, .bridal-party .bridal-party-container .bridesmaids .about-bridesmaids .groomsmen-text {
+          height: 160px;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .bridal-party .bridal-party-container .groomsmen .about-groomsmen .groomsmen-text .groomsmen-text-container, .bridal-party .bridal-party-container .groomsmen .about-bridesmaids .groomsmen-text .groomsmen-text-container, .bridal-party .bridal-party-container .bridesmaids .about-groomsmen .groomsmen-text .groomsmen-text-container, .bridal-party .bridal-party-container .bridesmaids .about-bridesmaids .groomsmen-text .groomsmen-text-container {
+            text-align: center; }
 
 .faq {
   margin-top: 90px; }
