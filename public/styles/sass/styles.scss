@@ -69,14 +69,14 @@ header::after {
 .bridal-party {
     background-color: #f6f6f6;
 
-    .groomsmen-name {
+    .groomsmen-name, .bridesmaids-name {
         font-family: 'Dosis', sans-serif;
         text-transform: uppercase;
         color: goldenrod;
         font-weight: 600;
     }
 
-    .groomsmen-title {
+    .groomsmen-title, .bridesmaids-title {
         font-family: "Dosis", sans-serif;
         color: #969494;
         font-size: 0.9em;
@@ -114,10 +114,6 @@ header::after {
         font-size: 1em;
         color: #767878;
         margin-top: 20px;
-        -webkit-transition: all 0.3s ease-out;
-        -moz-transition: all 0.3s ease-out;
-        -o-transition: all 0.3s ease-out;
-        transition: all 0.3s ease-out;
     }
 
     .question-answer-hide {

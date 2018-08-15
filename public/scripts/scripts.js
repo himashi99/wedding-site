@@ -99,6 +99,29 @@ countDown();
 //   }
 // }
 
+///////////////////////////////////// Bridal Party Section //////////////////////////////////
+
+let groomsmenButton = document.getElementById("groomsmen-button");
+let bridesmaidsButton = document.getElementById("bridesmaids-button");
+let groomsmenBox = document.getElementById("groomsmen-box");
+let bridesmaidsBox = document.getElementById("bridesmaids-box");
+
+    groomsmenButton.addEventListener("click", function() {
+        groomsmenBox.classList.add("show-bridal-party");
+        groomsmenBox.classList.remove("hide-bridal-party");
+        bridesmaidsBox.classList.add("hide-bridal-party");
+        bridesmaidsBox.classList.remove("show-bridal-party");
+    })
+
+    bridesmaidsButton.addEventListener("click", function() {
+        bridesmaidsBox.classList.add("show-bridal-party");
+        bridesmaidsBox.classList.remove("hide-bridal-party");
+        groomsmenBox.classList.add("hide-bridal-party");
+        groomsmenBox.classList.remove("show-bridal-party");
+    })
+
+
+
 ///////////////////////////////////////////////////////////////////
 
 let arrowButton = document.getElementsByClassName("arrow");

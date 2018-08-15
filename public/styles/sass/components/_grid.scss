@@ -507,6 +507,8 @@ header::after {
             margin-top: 60px;
             padding-bottom: 100px;
 
+
+
             .about-groomsmen, .about-bridesmaids {
                 height: 450px;
                 background-color: white;
@@ -515,17 +517,38 @@ header::after {
                 margin-top: 15px;
                 margin-bottom: 15px;
 
-                .groomsmen-text {
+                .groomsmen-text, .bridesmaids-text {
                     height: 160px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
 
-                    .groomsmen-text-container {
+                    .groomsmen-text-container, .bridesmaids-text-container {
                         text-align: center;
                     }
                 }
             }
+        }
+
+        .show-bridal-party {
+            display: flex;
+            // visibility: visible;
+            // opacity: 1;
+            // animation: fade 0.2s;
+        }
+
+//         @keyframes fade {
+//            0% {
+//              opacity: 0;
+//          }
+
+//            100% {
+//              opacity: 1;
+//          }
+//          }
+
+        .hide-bridal-party {
+                display: none;
         }
 
     }
@@ -561,6 +584,10 @@ header::after {
                 .question-answer {
                     margin-top: 20px;
                     padding-right: 35px;
+                    -webkit-transition: all 0.3s ease-out;
+                    -moz-transition: all 0.3s ease-out;
+                    -o-transition: all 0.3s ease-out;
+                    transition: all 0.3s ease-out;
                 }
             }
         }

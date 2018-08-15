@@ -333,13 +333,17 @@ header::after {
         margin-right: 15px;
         margin-top: 15px;
         margin-bottom: 15px; }
-        .bridal-party .bridal-party-container .groomsmen .about-groomsmen .groomsmen-text, .bridal-party .bridal-party-container .groomsmen .about-bridesmaids .groomsmen-text, .bridal-party .bridal-party-container .bridesmaids .about-groomsmen .groomsmen-text, .bridal-party .bridal-party-container .bridesmaids .about-bridesmaids .groomsmen-text {
+        .bridal-party .bridal-party-container .groomsmen .about-groomsmen .groomsmen-text, .bridal-party .bridal-party-container .groomsmen .about-groomsmen .bridesmaids-text, .bridal-party .bridal-party-container .groomsmen .about-bridesmaids .groomsmen-text, .bridal-party .bridal-party-container .groomsmen .about-bridesmaids .bridesmaids-text, .bridal-party .bridal-party-container .bridesmaids .about-groomsmen .groomsmen-text, .bridal-party .bridal-party-container .bridesmaids .about-groomsmen .bridesmaids-text, .bridal-party .bridal-party-container .bridesmaids .about-bridesmaids .groomsmen-text, .bridal-party .bridal-party-container .bridesmaids .about-bridesmaids .bridesmaids-text {
           height: 160px;
           display: flex;
           justify-content: center;
           align-items: center; }
-          .bridal-party .bridal-party-container .groomsmen .about-groomsmen .groomsmen-text .groomsmen-text-container, .bridal-party .bridal-party-container .groomsmen .about-bridesmaids .groomsmen-text .groomsmen-text-container, .bridal-party .bridal-party-container .bridesmaids .about-groomsmen .groomsmen-text .groomsmen-text-container, .bridal-party .bridal-party-container .bridesmaids .about-bridesmaids .groomsmen-text .groomsmen-text-container {
+          .bridal-party .bridal-party-container .groomsmen .about-groomsmen .groomsmen-text .groomsmen-text-container, .bridal-party .bridal-party-container .groomsmen .about-groomsmen .groomsmen-text .bridesmaids-text-container, .bridal-party .bridal-party-container .groomsmen .about-groomsmen .bridesmaids-text .groomsmen-text-container, .bridal-party .bridal-party-container .groomsmen .about-groomsmen .bridesmaids-text .bridesmaids-text-container, .bridal-party .bridal-party-container .groomsmen .about-bridesmaids .groomsmen-text .groomsmen-text-container, .bridal-party .bridal-party-container .groomsmen .about-bridesmaids .groomsmen-text .bridesmaids-text-container, .bridal-party .bridal-party-container .groomsmen .about-bridesmaids .bridesmaids-text .groomsmen-text-container, .bridal-party .bridal-party-container .groomsmen .about-bridesmaids .bridesmaids-text .bridesmaids-text-container, .bridal-party .bridal-party-container .bridesmaids .about-groomsmen .groomsmen-text .groomsmen-text-container, .bridal-party .bridal-party-container .bridesmaids .about-groomsmen .groomsmen-text .bridesmaids-text-container, .bridal-party .bridal-party-container .bridesmaids .about-groomsmen .bridesmaids-text .groomsmen-text-container, .bridal-party .bridal-party-container .bridesmaids .about-groomsmen .bridesmaids-text .bridesmaids-text-container, .bridal-party .bridal-party-container .bridesmaids .about-bridesmaids .groomsmen-text .groomsmen-text-container, .bridal-party .bridal-party-container .bridesmaids .about-bridesmaids .groomsmen-text .bridesmaids-text-container, .bridal-party .bridal-party-container .bridesmaids .about-bridesmaids .bridesmaids-text .groomsmen-text-container, .bridal-party .bridal-party-container .bridesmaids .about-bridesmaids .bridesmaids-text .bridesmaids-text-container {
             text-align: center; }
+    .bridal-party .bridal-party-container .show-bridal-party {
+      display: flex; }
+    .bridal-party .bridal-party-container .hide-bridal-party {
+      display: none; }
 
 .faq {
   margin-top: 90px; }
@@ -361,7 +365,11 @@ header::after {
           justify-content: space-between; }
         .faq .questions-and-answers-container .questions-and-answers .question-container .question-answer {
           margin-top: 20px;
-          padding-right: 35px; }
+          padding-right: 35px;
+          -webkit-transition: all 0.3s ease-out;
+          -moz-transition: all 0.3s ease-out;
+          -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
 
 .names h1 {
   font-family: 'Great Vibes', cursive;
@@ -478,12 +486,12 @@ header::after {
 
 .bridal-party {
   background-color: #f6f6f6; }
-  .bridal-party .groomsmen-name {
+  .bridal-party .groomsmen-name, .bridal-party .bridesmaids-name {
     font-family: 'Dosis', sans-serif;
     text-transform: uppercase;
     color: goldenrod;
     font-weight: 600; }
-  .bridal-party .groomsmen-title {
+  .bridal-party .groomsmen-title, .bridal-party .bridesmaids-title {
     font-family: "Dosis", sans-serif;
     color: #969494;
     font-size: 0.9em;
@@ -511,11 +519,7 @@ header::after {
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
     color: #767878;
-    margin-top: 20px;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out; }
+    margin-top: 20px; }
   .question-container .question-answer-hide {
     height: 0px;
     opacity: 0; }
