@@ -17,18 +17,20 @@
       position: relative;
       top: 8em; }
 
-header .navigation {
-  min-height: 70px; }
-  header .navigation .nav-links {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; }
-    header .navigation .nav-links ul {
-      margin-right: 4em; }
-      header .navigation .nav-links ul li {
-        margin-right: 2em; }
+header .navigation .nav-links {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+  header .navigation .nav-links ul {
+    margin-right: 4em; }
+    header .navigation .nav-links ul a {
+      margin-left: 1em;
+      margin-right: 1em;
+      text-decoration: none;
+      font-weight: 400;
+      padding: 10px; }
 header .pin-top {
   position: fixed;
   width: 100%;
@@ -39,6 +41,10 @@ header .pin-top::after {
   height: 3px; }
 header .pin-bottom {
   position: relative; }
+
+header ul a:hover {
+  color: #b88c03;
+  background-color: #ececec; }
 
 header::after {
   position: absolute;
@@ -412,7 +418,7 @@ li {
   font-family: 'Open Sans', sans-serif;
   font-size: 0.9em;
   text-transform: uppercase;
-  color: #b88c03; }
+  color: #daa520; }
 
 .groom-about-para h2, .bride-about-para h2 {
   font-family: 'Lato', sans-serif;
