@@ -471,7 +471,6 @@ header::after {
             justify-content: center;
 
             .groomsmen-nav, .bridesmaids-nav {
-                background-color: #cee0dd;
                 width: 140px;
                 margin-right: 10px;
                 margin-left: 10px;
@@ -482,6 +481,8 @@ header::after {
                 border: 3px solid white;
                 border-radius: 5%;
                 cursor: pointer;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+                transition: background 0.8s;
 
                 p {
                     text-transform: uppercase;
@@ -493,9 +494,30 @@ header::after {
             }
 
             .groomsmen-nav:hover, .bridesmaids-nav:hover {
-                background-color: #9fc2bc;
-
+                // background-color: #9fc2bc;
+                background: #9fc2bc radial-gradient(circle, transparent 1%, #9fc2bc 1%) center/15000%;
             }
+
+            .groomsmen-nav:active, .bridesmaids-nav:active {
+                background-color: #cee0dd;
+                background-size: 100%;
+                transition: background 0s;
+            }
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 0.9s ease-in 1 forwards;
+        }
+
+        .is-paused {
+            animation-play-state: paused;
         }
 
 
@@ -506,8 +528,7 @@ header::after {
             flex-wrap: wrap;
             margin-top: 60px;
             padding-bottom: 100px;
-
-
+           
 
             .about-groomsmen, .about-bridesmaids {
                 height: 450px;
@@ -530,28 +551,20 @@ header::after {
             }
         }
 
-        .show-bridal-party {
-            display: flex;
-            // visibility: visible;
-            // opacity: 1;
-            // animation: fade 0.2s;
+        .bridal-party-hide {
+            opacity: 0;
+            display: none;
+            visibility: hidden;
         }
-
-//         @keyframes fade {
-//            0% {
-//              opacity: 0;
-//          }
-
-//            100% {
-//              opacity: 1;
-//          }
-//          }
-
-        .hide-bridal-party {
-                display: none;
-        }
-
     }
+}
+
+.button-color-dark {
+    background-color: #9fc2bc;
+}
+
+.button-color-light {
+    background-color: #cee0dd;
 }
 
 .faq {

@@ -107,18 +107,43 @@ let groomsmenBox = document.getElementById("groomsmen-box");
 let bridesmaidsBox = document.getElementById("bridesmaids-box");
 
     groomsmenButton.addEventListener("click", function() {
-        groomsmenBox.classList.add("show-bridal-party");
-        groomsmenBox.classList.remove("hide-bridal-party");
-        bridesmaidsBox.classList.add("hide-bridal-party");
-        bridesmaidsBox.classList.remove("show-bridal-party");
+        groomsmenBox.classList.remove("bridal-party-hide");
+        // groomsmenBox.classList.add("bridal-party-show");
+        bridesmaidsBox.classList.add("bridal-party-hide");
+        // bridesmaidsBox.classList.remove("bridal-party-show");
+
+        groomsmenButton.classList.add("button-color-dark");
+        groomsmenButton.classList.remove("button-color-light");
+        bridesmaidsButton.classList.add("button-color-light");
+        bridesmaidsButton.classList.remove("button-color-dark");
+
+        var el = document.getElementById("groomsmen-box");
+        if (el.classList.contains('is-paused')){
+          el.classList.remove('is-paused');
+          el.classList.add('fade-in');
+        }
     })
 
     bridesmaidsButton.addEventListener("click", function() {
-        bridesmaidsBox.classList.add("show-bridal-party");
-        bridesmaidsBox.classList.remove("hide-bridal-party");
-        groomsmenBox.classList.add("hide-bridal-party");
-        groomsmenBox.classList.remove("show-bridal-party");
+        bridesmaidsBox.classList.remove("bridal-party-hide");
+        // bridesmaidsBox.classList.add("bridal-party-show");
+        groomsmenBox.classList.add("bridal-party-hide");
+        // groomsmenBox.classList.remove("bridal-party-show");
+
+        bridesmaidsButton.classList.add("button-color-dark");
+        bridesmaidsButton.classList.remove("button-color-light");
+        groomsmenButton.classList.remove("button-color-dark");
+        groomsmenButton.classList.add("button-color-light");
+
+        var el = document.getElementById("bridesmaids-box");
+        if (el.classList.contains('is-paused')){
+          el.classList.remove('is-paused');
+        }
     })
+
+
+
+    
 
 
 

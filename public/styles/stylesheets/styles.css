@@ -301,7 +301,6 @@ header::after {
       display: flex;
       justify-content: center; }
       .bridal-party .bridal-party-container .bridal-party-nav .groomsmen-nav, .bridal-party .bridal-party-container .bridal-party-nav .bridesmaids-nav {
-        background-color: #cee0dd;
         width: 140px;
         margin-right: 10px;
         margin-left: 10px;
@@ -311,14 +310,28 @@ header::after {
         padding: 10px;
         border: 3px solid white;
         border-radius: 5%;
-        cursor: pointer; }
+        cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        transition: background 0.8s; }
         .bridal-party .bridal-party-container .bridal-party-nav .groomsmen-nav p, .bridal-party .bridal-party-container .bridal-party-nav .bridesmaids-nav p {
           text-transform: uppercase;
           color: #b88c03;
           font-family: 'Dosis', sans-serif;
           font-weight: 600; }
       .bridal-party .bridal-party-container .bridal-party-nav .groomsmen-nav:hover, .bridal-party .bridal-party-container .bridal-party-nav .bridesmaids-nav:hover {
-        background-color: #9fc2bc; }
+        background: #9fc2bc radial-gradient(circle, transparent 1%, #9fc2bc 1%) center/15000%; }
+      .bridal-party .bridal-party-container .bridal-party-nav .groomsmen-nav:active, .bridal-party .bridal-party-container .bridal-party-nav .bridesmaids-nav:active {
+        background-color: #cee0dd;
+        background-size: 100%;
+        transition: background 0s; }
+@keyframes fadeIn {
+  to {
+    opacity: 1; } }
+    .bridal-party .bridal-party-container .fade-in {
+      opacity: 0;
+      animation: fadeIn 0.9s ease-in 1 forwards; }
+    .bridal-party .bridal-party-container .is-paused {
+      animation-play-state: paused; }
     .bridal-party .bridal-party-container .groomsmen, .bridal-party .bridal-party-container .bridesmaids {
       display: flex;
       justify-content: center;
@@ -340,10 +353,16 @@ header::after {
           align-items: center; }
           .bridal-party .bridal-party-container .groomsmen .about-groomsmen .groomsmen-text .groomsmen-text-container, .bridal-party .bridal-party-container .groomsmen .about-groomsmen .groomsmen-text .bridesmaids-text-container, .bridal-party .bridal-party-container .groomsmen .about-groomsmen .bridesmaids-text .groomsmen-text-container, .bridal-party .bridal-party-container .groomsmen .about-groomsmen .bridesmaids-text .bridesmaids-text-container, .bridal-party .bridal-party-container .groomsmen .about-bridesmaids .groomsmen-text .groomsmen-text-container, .bridal-party .bridal-party-container .groomsmen .about-bridesmaids .groomsmen-text .bridesmaids-text-container, .bridal-party .bridal-party-container .groomsmen .about-bridesmaids .bridesmaids-text .groomsmen-text-container, .bridal-party .bridal-party-container .groomsmen .about-bridesmaids .bridesmaids-text .bridesmaids-text-container, .bridal-party .bridal-party-container .bridesmaids .about-groomsmen .groomsmen-text .groomsmen-text-container, .bridal-party .bridal-party-container .bridesmaids .about-groomsmen .groomsmen-text .bridesmaids-text-container, .bridal-party .bridal-party-container .bridesmaids .about-groomsmen .bridesmaids-text .groomsmen-text-container, .bridal-party .bridal-party-container .bridesmaids .about-groomsmen .bridesmaids-text .bridesmaids-text-container, .bridal-party .bridal-party-container .bridesmaids .about-bridesmaids .groomsmen-text .groomsmen-text-container, .bridal-party .bridal-party-container .bridesmaids .about-bridesmaids .groomsmen-text .bridesmaids-text-container, .bridal-party .bridal-party-container .bridesmaids .about-bridesmaids .bridesmaids-text .groomsmen-text-container, .bridal-party .bridal-party-container .bridesmaids .about-bridesmaids .bridesmaids-text .bridesmaids-text-container {
             text-align: center; }
-    .bridal-party .bridal-party-container .show-bridal-party {
-      display: flex; }
-    .bridal-party .bridal-party-container .hide-bridal-party {
-      display: none; }
+    .bridal-party .bridal-party-container .bridal-party-hide {
+      opacity: 0;
+      display: none;
+      visibility: hidden; }
+
+.button-color-dark {
+  background-color: #9fc2bc; }
+
+.button-color-light {
+  background-color: #cee0dd; }
 
 .faq {
   margin-top: 90px; }
