@@ -641,10 +641,10 @@
                         <div class="col-md-6">
                             <label>Will You Attend?</label>
                             <input type="radio" name="attend" value="Yes, I'll be there" checked class="form-design">
-                            <span>Yes, I'll be there</span>
+                            <span id="yes-response">Yes, I'll be there</span>
                             <br>
                             <input type="radio" name="attend" value="Sorry, I can't come" class="form-design">
-                            <span>Sorry, I can't come</span>
+                            <span id="no-response">Sorry, I can't come</span>
                         </div>
                         <div class="col-md-6">
                             <label>Number of Guests</label>
@@ -674,8 +674,10 @@
                             <textarea name="message" class="form-design"></textarea>
                         </div>
                         </div>
+                        <div class="row-4">
                         <div class="col-md-6">
-                            <button type="submit" value="Submit">Submit</input>
+                            <button type="submit" value="Submit" id="rsvp-submit-button">Submit</button>
+                        </div>
                         </div>
                     </div>
                 </form>

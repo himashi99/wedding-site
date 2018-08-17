@@ -371,7 +371,8 @@ header::after {
   background-color: #cee0dd; }
 
 .faq {
-  margin-top: 90px; }
+  margin-top: 90px;
+  margin-bottom: 90px; }
   .faq .faq-title {
     display: flex;
     justify-content: center; }
@@ -406,7 +407,7 @@ header::after {
       display: flex;
       justify-content: center; }
       .rsvp .rsvp-background .rsvp-title-container .rsvp-title {
-        margin-top: 200px;
+        margin-top: 150px;
         text-align: center;
         color: burlywood; }
         .rsvp .rsvp-background .rsvp-title-container .rsvp-title h1 {
@@ -423,44 +424,76 @@ header::after {
       margin-top: 50px; }
       .rsvp .rsvp-background .form-container .form-design {
         background-color: rgba(255, 255, 255, 0.1);
-        color: #fff;
+        color: aliceblue;
         padding: 10px 20px;
         box-shadow: none;
         border: 2px solid gray;
         display: inline-block;
         border-radius: 25px;
         font-size: 14px;
-        line-height: 1.42857143;
-        color: white; }
+        line-height: 1.42857143; }
       .rsvp .rsvp-background .form-container form {
         width: 600px; }
         .rsvp .rsvp-background .form-container form .row-1 {
           display: flex;
           justify-content: space-around;
-          margin-bottom: 20px; }
+          margin-bottom: 20px;
+          height: 80px; }
           .rsvp .rsvp-background .form-container form .row-1 .form-design {
             wdith: 210px; }
         .rsvp .rsvp-background .form-container form .row-2 {
           display: flex;
           justify-content: space-around;
           margin-bottom: 20px;
-          height: 60px; }
+          height: 80px; }
           .rsvp .rsvp-background .form-container form .row-2 .dropdown {
             width: 85px;
             height: 40px; }
+          .rsvp .rsvp-background .form-container form .row-2 span {
+            color: aliceblue;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 0.9em;
+            margin-left: 0.5em;
+            letter-spacing: 1px; }
+          .rsvp .rsvp-background .form-container form .row-2 #no-response {
+            line-height: 25px; }
         .rsvp .rsvp-background .form-container form .row-3 {
           display: flex;
           justify-content: space-evenly;
-          margin-bottom: 20px;
-          textarea: focus;
-            textarea-border-radius: 25px; }
+          margin-bottom: 20px; }
           .rsvp .rsvp-background .form-container form .row-3 textarea {
             width: 492px;
-            height: 90px; }
+            height: 90px;
+            outline: none;
+            letter-spacing: 1px;
+            font-family: 'Open Sans', sans-serif; }
         .rsvp .rsvp-background .form-container form label {
           display: block;
-          color: #dec787;
-          margin-bottom: 5px; }
+          color: burlywood;
+          margin-bottom: 9px;
+          font-size: 0.9em;
+          font-weight: 500;
+          font-family: 'Dosis', sans-serif;
+          letter-spacing: 1px; }
+        .rsvp .rsvp-background .form-container form .row-4 {
+          display: flex;
+          justify-content: center;
+          button: active; }
+          .rsvp .rsvp-background .form-container form .row-4 button {
+            width: 140px;
+            padding: 10px;
+            border: 3px solid white;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+            transition: background 0.8s;
+            background-color: #cee0dd;
+            text-transform: uppercase;
+            color: #b88c03;
+            font-family: 'Dosis', sans-serif;
+            font-weight: 600;
+            font-size: 0.9em; }
+          .rsvp .rsvp-background .form-container form .row-4 button:hover {
+            background: #9fc2bc radial-gradient(circle, transparent 1%, #9fc2bc 1%) center/15000%; }
 
 input[type="text"]:focus {
   outline: none; }

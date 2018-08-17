@@ -623,6 +623,7 @@ header::after {
 
 .faq {
     margin-top: 90px;
+    margin-bottom: 90px;
 
     .faq-title {
         display: flex;
@@ -674,7 +675,7 @@ header::after {
             justify-content: center;
 
             .rsvp-title {
-                margin-top: 200px;
+                margin-top: 150px;
                 text-align: center;
                 color: burlywood;
 
@@ -701,7 +702,7 @@ header::after {
 
             .form-design {
                 background-color: rgba(255,255,255,0.1);
-                color: #fff;
+                color: aliceblue;
                 // height: 50px;
                 padding: 10px 20px;
                 box-shadow: none;
@@ -710,8 +711,7 @@ header::after {
                 border-radius: 25px;
                 // width: 100%;
                 font-size: 14px;
-                line-height: 1.42857143;  
-                color: white;  
+                line-height: 1.42857143;   
             }
 
             form {
@@ -721,6 +721,7 @@ header::after {
                     display: flex;
                     justify-content: space-around;
                     margin-bottom: 20px;
+                    height: 80px;
 
                     .form-design {
                         wdith: 210px;
@@ -731,11 +732,23 @@ header::after {
                     display: flex;    
                     justify-content: space-around;
                     margin-bottom: 20px;
-                    height: 60px;
+                    height: 80px;
 
                     .dropdown {
                         width: 85px;
                         height: 40px;
+                    }
+
+                    span {
+                        color: aliceblue;
+                        font-family: 'Open Sans', sans-serif;
+                        font-size: 0.9em;
+                        margin-left: 0.5em;
+                        letter-spacing: 1px;
+                    }
+
+                    #no-response {
+                        line-height: 25px;
                     }
 
                 }
@@ -748,16 +761,52 @@ header::after {
                     textarea {
                         width: 492px;
                         height: 90px;
-                    }
-                    textarea: focus {
-                        border-radius: 25px;
+                        outline: none;
+                        letter-spacing: 1px;
+                        font-family: 'Open Sans', sans-serif;
                     }
                 }
                 
                 label {
                     display: block;
-                    color: #dec787;
-                    margin-bottom: 5px;
+                    // color: #dec787;
+                    color: burlywood;
+                    margin-bottom: 9px;
+                    font-size: 0.9em;
+                    font-weight: 500;
+                    font-family: 'Dosis', sans-serif;
+                    letter-spacing: 1px;
+                }
+
+                .row-4 {
+                    display: flex;
+                    justify-content: center;
+
+                    button {
+                        width: 140px;
+                        padding: 10px;
+                        border: 3px solid white;
+                        cursor: pointer;
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+                        transition: background 0.8s;
+                        background-color: #cee0dd;
+
+                        text-transform: uppercase;
+                        color: #b88c03;
+                        font-family: 'Dosis', sans-serif;
+                        font-weight: 600;
+                        font-size: 0.9em;
+                    }
+
+                    button:hover {
+                        background: #9fc2bc radial-gradient(circle, transparent 1%, #9fc2bc 1%) center/15000%;
+                    }
+
+                    button: active {
+                        // background-color: #cee0dd;
+                        // background-size: 100%;
+                        // transition: background 0s;
+                    }
                 }
             }
             
