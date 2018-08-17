@@ -501,6 +501,9 @@ input[type="text"]:focus {
 .name-email {
   width: 215px; }
 
+.dropdown-container {
+  text-align: center; }
+
 .names h1 {
   font-family: 'Great Vibes', cursive;
   color: gainsboro;
