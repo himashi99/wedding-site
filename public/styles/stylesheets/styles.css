@@ -396,6 +396,78 @@ header::after {
           -o-transition: all 0.3s ease-out;
           transition: all 0.3s ease-out; }
 
+.rsvp {
+  height: 800px; }
+  .rsvp .rsvp-background {
+    width: 100%;
+    height: 100%;
+    background: url(https://res.cloudinary.com/dzz2aiwnj/image/upload/v1534448213/flowerbg-dark.jpg) center center/cover no-repeat local; }
+    .rsvp .rsvp-background .rsvp-title-container {
+      display: flex;
+      justify-content: center; }
+      .rsvp .rsvp-background .rsvp-title-container .rsvp-title {
+        margin-top: 200px;
+        text-align: center;
+        color: burlywood; }
+        .rsvp .rsvp-background .rsvp-title-container .rsvp-title h1 {
+          font-family: 'Great Vibes', cursive;
+          font-size: 5em; }
+        .rsvp .rsvp-background .rsvp-title-container .rsvp-title h3 {
+          font-size: 2em;
+          font-weight: 500;
+          font-style: italic; }
+    .rsvp .rsvp-background .form-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px; }
+      .rsvp .rsvp-background .form-container .form-design {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #fff;
+        padding: 10px 20px;
+        box-shadow: none;
+        border: 2px solid gray;
+        display: inline-block;
+        border-radius: 25px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: white; }
+      .rsvp .rsvp-background .form-container form {
+        width: 600px; }
+        .rsvp .rsvp-background .form-container form .row-1 {
+          display: flex;
+          justify-content: space-around;
+          margin-bottom: 20px; }
+          .rsvp .rsvp-background .form-container form .row-1 .form-design {
+            wdith: 210px; }
+        .rsvp .rsvp-background .form-container form .row-2 {
+          display: flex;
+          justify-content: space-around;
+          margin-bottom: 20px;
+          height: 60px; }
+          .rsvp .rsvp-background .form-container form .row-2 .dropdown {
+            width: 85px;
+            height: 40px; }
+        .rsvp .rsvp-background .form-container form .row-3 {
+          display: flex;
+          justify-content: space-evenly;
+          margin-bottom: 20px;
+          textarea: focus;
+            textarea-border-radius: 25px; }
+          .rsvp .rsvp-background .form-container form .row-3 textarea {
+            width: 492px;
+            height: 90px; }
+        .rsvp .rsvp-background .form-container form label {
+          display: block;
+          color: #dec787;
+          margin-bottom: 5px; }
+
+input[type="text"]:focus {
+  outline: none; }
+
+.name-email {
+  width: 215px; }
+
 .names h1 {
   font-family: 'Great Vibes', cursive;
   color: gainsboro;

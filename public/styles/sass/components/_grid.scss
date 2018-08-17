@@ -661,3 +661,124 @@ header::after {
     }
 }
 
+.rsvp {
+    height: 800px;
+
+    .rsvp-background {
+        width: 100%;
+        height: 100%;
+        background: url(https://res.cloudinary.com/dzz2aiwnj/image/upload/v1534448213/flowerbg-dark.jpg) center center/cover no-repeat local;
+        
+        .rsvp-title-container {
+            display: flex;
+            justify-content: center;
+
+            .rsvp-title {
+                margin-top: 200px;
+                text-align: center;
+                color: burlywood;
+
+                h1 {
+                    font-family: 'Great Vibes', cursive;
+                    font-size: 5em; 
+                    // color: #46857a;
+                }
+
+                h3 {
+                    font-size: 2em;
+                    // font-family: 'Dosis', sans-serif;
+                    font-weight: 500;
+                    font-style: italic;
+                }
+            }
+
+        }
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+
+            .form-design {
+                background-color: rgba(255,255,255,0.1);
+                color: #fff;
+                // height: 50px;
+                padding: 10px 20px;
+                box-shadow: none;
+                border: 2px solid gray;
+                display: inline-block;
+                border-radius: 25px;
+                // width: 100%;
+                font-size: 14px;
+                line-height: 1.42857143;  
+                color: white;  
+            }
+
+            form {
+                width: 600px;
+
+                .row-1 {
+                    display: flex;
+                    justify-content: space-around;
+                    margin-bottom: 20px;
+
+                    .form-design {
+                        wdith: 210px;
+                    }
+                }
+
+                .row-2 {
+                    display: flex;    
+                    justify-content: space-around;
+                    margin-bottom: 20px;
+                    height: 60px;
+
+                    .dropdown {
+                        width: 85px;
+                        height: 40px;
+                    }
+
+                }
+
+                .row-3 {
+                    display: flex;    
+                    justify-content: space-evenly;
+                    margin-bottom: 20px;
+
+                    textarea {
+                        width: 492px;
+                        height: 90px;
+                    }
+                    textarea: focus {
+                        border-radius: 25px;
+                    }
+                }
+                
+                label {
+                    display: block;
+                    color: #dec787;
+                    margin-bottom: 5px;
+                }
+            }
+            
+        }
+
+    }
+}
+
+input[type="text"]:focus{
+  outline: none;
+}
+
+.name-email {
+    width: 215px;
+}
+
+
+
+
+                
+                 
+                 
+
+
