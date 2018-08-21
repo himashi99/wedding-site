@@ -372,7 +372,8 @@ header::after {
 
 .faq {
   margin-top: 90px;
-  margin-bottom: 90px; }
+  margin-bottom: 90px;
+  height: 1650px; }
   .faq .faq-title {
     display: flex;
     justify-content: center; }
@@ -466,7 +467,8 @@ header::after {
             height: 90px;
             outline: none;
             letter-spacing: 1px;
-            font-family: 'Open Sans', sans-serif; }
+            font-family: 'Open Sans', sans-serif;
+            resize: none; }
         .rsvp .rsvp-background .form-container form label {
           display: block;
           color: burlywood;

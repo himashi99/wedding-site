@@ -180,7 +180,7 @@ function showHide() {
 }
 
 
-
+var submitButton = document.getElementById("groomsmen-box");
 
 
 
@@ -269,3 +269,84 @@ function showHide() {
 //       elements.classList.remove("question-answer-show");
 //     }
 // }
+
+////////////////////////////////NAVIGATION///////////////
+
+
+// let coupleButton = document.getElementById("couple-button");
+// let element = document.getElementById("scroll-to-bride-groom")
+
+// coupleButton.addEventListener('click', () => window.scrollTo({
+//   // top: 800,
+//   behavior: 'smooth',
+//   top: element.offsetTop
+// }));
+
+
+// let coupleButton = document.getElementById("couple-button");
+// let element = document.getElementById("scroll-to-bride-groom")
+
+// coupleButton.addEventListener('click', () => window.scrollTo({
+//   // top: 800,
+//   behavior: 'smooth',
+//   top: element.offsetTop
+// }));
+
+ $('#home-button').click(function(){
+    $('body, html').animate({scrollTop: 0}, 700);
+  });
+
+$("#couple-button").click(function() {
+      var position = $("#scroll-to-bride-groom").offset().top; //calculates how far the top of the Carousel is from the top of the page
+      $('body, html').animate({ scrollTop: position }, 700); });
+
+$("#story-button").click(function() {
+      var position = $("#scroll-to-story").offset().top; //calculates how far the top of the Carousel is from the top of the page
+      $('body, html').animate({ scrollTop: position }, 700); });
+
+$("#events-button").click(function() {
+      var position = $("#scroll-to-events").offset().top; //calculates how far the top of the Carousel is from the top of the page
+      $('body, html').animate({ scrollTop: position }, 700); });
+
+$("#people-button").click(function() {
+      var position = $("#scroll-to-bridal-party").offset().top; //calculates how far the top of the Carousel is from the top of the page
+      $('body, html').animate({ scrollTop: position }, 700); });
+
+$("#faq-button").click(function() {
+      var position = $("#scroll-to-faq").offset().top; //calculates how far the top of the Carousel is from the top of the page
+      $('body, html').animate({ scrollTop: position }, 700); });
+
+$("#rsvp-button").click(function() {
+      var position = $("#scroll-to-rsvp").offset().top; //calculates how far the top of the Carousel is from the top of the page
+      $('body, html').animate({ scrollTop: position }, 700); });
+
+// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+//     anchor.addEventListener('click', function (e) {
+//         e.preventDefault();
+
+//         document.querySelector(this.getAttribute('href')).scrollIntoView({
+//             behavior: 'smooth'
+//         });
+//     });
+// });
+
+// $(document).on('click', 'a[href^="#"]', function (event) {
+//     event.preventDefault();
+
+//     $('html, body').animate({
+//         scrollTop: $($.attr(this, 'href')).offset().top
+//     }, 500);
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+

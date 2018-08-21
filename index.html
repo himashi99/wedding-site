@@ -23,6 +23,7 @@
     
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -41,13 +42,13 @@
                 <nav class="navigation pin-top pin-bottom">
                     <div class="nav-links">
                         <ul>
-                            <a href="#"><li>Home</li></a>
-                            <a href="#"><li>Couple</li></a>
-                            <a href="#"><li>Story</li></a>
-                            <a href="#"><li>Events</li></a>
-                            <a href="#"><li>People</li></a>
-                            <a href="#"><li>FAQ</li></a>
-                            <a href="#"><li>RSVP</li></a>
+                            <a href="#" id="home-button"><li>Home</li></a>
+                            <a href="#" id="couple-button"><li>Couple</li></a>
+                            <a href="#" id="story-button"><li>Story</li></a>
+                            <a href="#" id="events-button"><li>Events</li></a>
+                            <a href="#" id="people-button"><li>People</li></a>
+                            <a href="#" id="faq-button"><li>FAQ</li></a>
+                            <a href="#scroll-to-rsvp" id="rsvp-button"><li>RSVP</li></a>
                         </ul>
                     </div>
                 </nav>
@@ -58,7 +59,7 @@
     <!-- End of Welcome Screen -->
 
     <!-- Begining of Bride/Groom -->
-    <section class="bride-groom">
+    <section class="bride-groom" id="scroll-to-bride-groom">
         <div class="bride-groom-container">
             <div class="groom-photo">
             </div> <!-- groom-photo -->
@@ -136,7 +137,7 @@
 
 
     <!-- Begining of Love Story -->
-    <section class="love-story">
+    <section class="love-story" id="scroll-to-story">
         <div class="love-birds">
             <img src="https://res.cloudinary.com/dzz2aiwnj/image/upload/v1533237904/couple-of-love-birds.svg" height="60" width="60">
         </div>
@@ -200,7 +201,7 @@
     <!-- End of Love Story -->
 
     <!-- Begining of Wedding Events -->
-    <section class="wedding-events">
+    <section class="wedding-events" id="scroll-to-events">
         <div class="love-birds">
             <img src="https://res.cloudinary.com/dzz2aiwnj/image/upload/v1533237904/couple-of-love-birds.svg" height="60" width="60">
         </div>
@@ -262,7 +263,7 @@
     <!-- End of Quote -->
 
     <!-- Begining of Bridal Party-->
-    <section class="bridal-party">
+    <section class="bridal-party" id="scroll-to-bridal-party">
         <div class="love-birds">
             <img src="https://res.cloudinary.com/dzz2aiwnj/image/upload/v1533237904/couple-of-love-birds.svg" height="60" width="60">
         </div>
@@ -288,7 +289,7 @@
                             <div class="groomsmen-text">
                                 <div class="groomsmen-text-container">
                                     <p class="groomsmen-name">Prasanth Vaaheeswaran</p> 
-                                    <p class="groomsmen-title">Best Man/Jerk</p>
+                                    <p class="groomsmen-title">Best Man</p>
                                 </div>
                             </div>
                     </div>
@@ -423,7 +424,7 @@
     <!-- End of Bridal Party -->
 
     <!-- Begining of FAQ-->
-    <section class="faq-section">
+    <section class="faq-section" id="scroll-to-faq">
         <div class="faq">
             <div class="faq-title">
                 <h1>Frequently Asked Questions</h1>
@@ -438,8 +439,7 @@
                             </div>
                         </div>
                         <div class="question-answer question-answer-hide" id="test">
-                            <p>Yes! We’ve secured a block of rooms at the following hotels. To take advantage of the group discount you must book your room(s) before September 1.</p>
-                            <p>Courtyard by Marriott</p>
+                            <p>Yes! We’ve secured a block of rooms at the Mariott. To take advantage of the group discount you must book your room(s) before September 1.</p>
                         </div>
                     </div> <!-- question-container -->
                     <div class="question-container">
@@ -587,17 +587,6 @@
                     </div> <!-- question-container -->
                     <div class="question-container">
                         <div class="question-title">
-                            <p>Can I bring my children?</p>
-                            <div class="arrow"> 
-                                <img src=https://res.cloudinary.com/dzz2aiwnj/image/upload/v1534090344/down-arrow.svg width="20px height="20px">
-                            </div>
-                        </div>
-                        <div class="question-answer question-answer-hide">
-                            <p>xxxxxxxxxx</p>
-                        </div>
-                    </div> <!-- question-container -->
-                    <div class="question-container">
-                        <div class="question-title">
                             <p>Can I bring a date?</p>
                             <div class="arrow"> 
                                 <img src=https://res.cloudinary.com/dzz2aiwnj/image/upload/v1534090344/down-arrow.svg width="20px height="20px">
@@ -616,7 +605,7 @@
     <!-- End of FAQ -->
 
     <!-- Begining of RSVP -->
-    <section class="rsvp">
+    <section class="rsvp" id="scroll-to-rsvp">
         <div class="rsvp-background">
             <div class="rsvp-title-container">
                 <div class="rsvp-title">
