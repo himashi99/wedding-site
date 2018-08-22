@@ -127,10 +127,26 @@ header::after {
     }
 }
 
+// Media Queiries
 
+//if the screen size is less than or equal to 400px
+// @media only screen and (max-width: 400px) {
+//     .bride-groom-container {
+//         background-color: red !important;
+//     }
+// }
 
-@media screen and (min-device-width: 480px) and (max-device-width: 768px) {
-    .navigation ul li {
-        color: red;
-  }
+@media only screen and (max-width: 480px) {
+    body {
+        background-color: green !important;
+    }
 }
+
+@media only screen and (max-width: 480px) {
+    .names {
+        top: 27em;
+    }
+}
+
+
+
