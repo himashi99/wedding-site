@@ -64,6 +64,10 @@ li {
     font-size: 1.6em;
     letter-spacing: 5px;
     color: $gold;
+
+    @include bp (baby-bear) {
+        font-size: 1.2em !important;
+    }
 }
 
 .ceremony-info h3, .reception-info h3 {

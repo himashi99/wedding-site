@@ -423,6 +423,8 @@ header::after {
       .seuss-quote .quote-background {
         padding-left: 1em;
         padding-right: 1em;
+        padding-top: 1em;
+        padding-right: 1em;
         background: url("../../assets/images2/engagement-banner-image-phone.jpg") center center/cover no-repeat local; } }
     .seuss-quote .quote-background .quote-text {
       font-size: 1.6em;
@@ -770,6 +772,9 @@ li {
   font-size: 1.6em;
   letter-spacing: 5px;
   color: #daa520; }
+  @media (max-width: 480px) {
+    .section-title {
+      font-size: 1.2em !important; } }
 
 .ceremony-info h3, .reception-info h3 {
   font-family: 'Dosis', sans-serif;
