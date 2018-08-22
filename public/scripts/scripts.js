@@ -363,23 +363,24 @@ window.onscroll = function() {scrollFunction()
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("scroll-up-arrow").style.display = "block";
+        dropdownItems.classList.remove("show-hamburger-menu");
     } else {
         document.getElementById("scroll-up-arrow").style.display = "none";
     }
 }
 
 // When the user clicks on the button, scroll to the top of the document
-// function goToTop() {
-//     let scrollUpButton = document.getElementById("scroll-up-arrow");
-//     scrollUpButton.addEventListener("click", function() {
-//       console.log(Hiiiiiya);
-//     })
-// }
 
 $('#scroll-up-arrow').click(function(){
     $('body, html').animate({scrollTop: 0}, 700);
   });
 
+// If hamburger menu is open, it will close once user scroll passes 20px
+function hideHamburgerOnScroll() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        dropdownItems.classList.remove("show-hamburger-menu");
+    } 
+}
 
 
 
