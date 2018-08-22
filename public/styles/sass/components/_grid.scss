@@ -1007,6 +1007,8 @@ header::after {
                         @include bp (baby-bear) {
                             width: 8em;
                             text-align: center;
+                            border: none; /* Remove borders */  
+                            outline: none; /* Remove outline */
                         }
                     }
 

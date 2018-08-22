@@ -659,7 +659,11 @@ header::after {
             @media (max-width: 480px) {
               .rsvp .rsvp-background .form-container form .row-2 .dropdown {
                 width: 8em;
-                text-align: center; } }
+                text-align: center;
+                border: none;
+                /* Remove borders */
+                outline: none;
+                /* Remove outline */ } }
           .rsvp .rsvp-background .form-container form .row-2 span {
             color: aliceblue;
             font-family: 'Open Sans', sans-serif;
@@ -938,8 +942,7 @@ header::after {
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    opacity: 0; }
+    z-index: 1; }
 
   .dropdown-content a {
     color: goldenrod;
@@ -965,9 +968,7 @@ header::after {
 
   .show-hamburger-menu {
     display: block;
-    width: 10em;
-    opacity: 1;
-    transition: all 0.6s ease-in; }
+    width: 10em; }
 
   .up-arrow {
     display: none;
