@@ -352,7 +352,6 @@ header::after {
   display: none; }
 
 .wedding-events {
-  height: 1450px;
   padding-top: 90px;
   padding-bottom: 110px; }
   @media (max-width: 480px) {
@@ -360,7 +359,8 @@ header::after {
       background-color: white !important;
       padding-top: 0px;
       padding-bottom: 0px;
-      margin-bottom: 3em; } }
+      margin-bottom: 3em;
+      height: 1450px; } }
   .wedding-events .love-birds {
     display: flex;
     justify-content: center; }
@@ -371,7 +371,7 @@ header::after {
       display: inline-block;
       padding: 0.3em 1em; }
   .wedding-events .wedding-event-info {
-    margin: 100px 250px 100px 250px; }
+    margin: 100px 250px 0px 250px; }
     @media (max-width: 480px) {
       .wedding-events .wedding-event-info {
         margin: 0;
@@ -545,12 +545,12 @@ header::after {
 
 .faq {
   margin-top: 90px;
-  margin-bottom: 90px;
-  height: 2460px; }
+  margin-bottom: 90px; }
   @media (max-width: 480px) {
     .faq {
       height: 3470px;
-      margin-top: 0; } }
+      margin-top: 0;
+      height: 2460px; } }
   .faq .faq-title {
     display: flex;
     justify-content: center; }
@@ -986,5 +986,7 @@ header::after {
     /* Remove borders */
     outline: none;
     /* Remove outline */ } }
+.up-arrow {
+  display: none; }
 
 /*# sourceMappingURL=styles.css.map */
