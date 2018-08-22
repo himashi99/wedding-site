@@ -365,7 +365,7 @@ header::after {
 
         @include bp (baby-bear) {
             left: 10%;  
-            height: 2010px;
+            height: 1970px;
         }
     }
 
@@ -393,7 +393,7 @@ header::after {
                 padding-left: 0;
                 padding-right: 0;
                 position: relative;
-                left: 3em;
+                left: 2em;
                 height: 470px;
             }
 
@@ -426,7 +426,7 @@ header::after {
                     font-size: 1.2em;
 
                     @include bp (baby-bear) {
-                        width: 230px;
+                        width: 280px;
                     }
                 }
             }
@@ -489,8 +489,8 @@ header::after {
                 right: 105%;
 
                 @include bp (baby-bear) {
-                    left: -4em;
-                    top: -23em;
+                    left: -3.2em;
+                    top: -22em;
                 }
               } 
 

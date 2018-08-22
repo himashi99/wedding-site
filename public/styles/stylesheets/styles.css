@@ -240,7 +240,7 @@ header::after {
     @media (max-width: 480px) {
       .love-story ul::before {
         left: 10%;
-        height: 2010px; } }
+        height: 1970px; } }
   .love-story ul {
     margin-top: 100px;
     margin-bottom: 24px;
@@ -263,7 +263,7 @@ header::after {
           padding-left: 0;
           padding-right: 0;
           position: relative;
-          left: 3em;
+          left: 2em;
           height: 470px; } }
       .love-story ul li .love-story-description h3 {
         font-family: 'Dosis', sans-serif;
@@ -287,7 +287,7 @@ header::after {
         font-size: 1.2em; }
         @media (max-width: 480px) {
           .love-story ul li .love-story-description .love-story-paragraph {
-            width: 230px; } }
+            width: 280px; } }
       .love-story ul li .love-story-photo {
         position: relative; }
         @media (max-width: 480px) {
@@ -328,8 +328,8 @@ header::after {
           right: 105%; }
           @media (max-width: 480px) {
             .love-story ul li:nth-child(odd) .love-story-photo span {
-              left: -4em;
-              top: -23em; } }
+              left: -3.2em;
+              top: -22em; } }
     .love-story ul li:nth-child(even) {
       flex-direction: row-reverse; }
       .love-story ul li:nth-child(even) .love-story-description {
