@@ -939,7 +939,7 @@ header::after {
     z-index: 1; }
 
   .dropdown-content a {
-    color: black;
+    color: goldenrod;
     padding: 12px 16px;
     text-decoration: none;
     display: block; }
@@ -948,15 +948,17 @@ header::after {
     background-color: #f1f1f1; }
 
   .dropdown:hover .dropdown-content {
-    display: block; }
+    display: block;
+    width: 10em; }
 
   .dropdown:hover .dropbtn {
     background-color: white; }
 
   .hamburger-menu {
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0; } }
+    width: 45px;
+    height: 3px;
+    background-color: goldenrod;
+    margin: 6px 0;
+    margin-right: 1em; } }
 
 /*# sourceMappingURL=styles.css.map */
