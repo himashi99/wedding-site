@@ -1,8 +1,8 @@
 @mixin bp($point) {
 
 $bp-babybear: "(max-width: 480px)";
-$bp-mamabear: "(max-width: 768px)";
-$bp-papabear: "(max-width: 1600px)";
+$bp-mamabear: "(min-width: 481px) and (max-width: 767px)";
+$bp-papabear: "(min-width: 768px) and (max-width: 1290px)";
 
   @if $point == papa-bear {
     @media #{$bp-papabear} { @content; }
@@ -14,3 +14,4 @@ $bp-papabear: "(max-width: 1600px)";
     @media #{$bp-babybear}  { @content; }
   }
 }
+

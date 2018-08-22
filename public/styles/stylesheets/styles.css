@@ -4,6 +4,9 @@
 .hero-image-container {
   height: 100vh;
   min-height: 700px; }
+  @media (min-width: 481px) and (max-width: 767px) {
+    .hero-image-container {
+      min-height: 0; } }
   .hero-image-container .hero-image {
     width: 100%;
     height: calc(100vh - 50px);
@@ -32,7 +35,11 @@ header .navigation .nav-links {
   @media (max-width: 480px) {
     header .navigation .nav-links {
       height: 40px;
-      justify-content: flex-start; } }
+      justify-content: center; } }
+  @media (min-width: 481px) and (max-width: 767px) {
+    header .navigation .nav-links {
+      height: 40px;
+      justify-content: center; } }
   header .navigation .nav-links ul {
     margin-right: 4em; }
     @media (max-width: 480px) {
@@ -50,6 +57,11 @@ header .navigation .nav-links {
           padding: 0;
           margin-left: 0.2em;
           margin-right: 0.2em; } }
+      @media (min-width: 481px) and (max-width: 767px) {
+        header .navigation .nav-links ul a {
+          padding: 0;
+          margin-left: 0.5em;
+          margin-right: 0.5em; } }
 header .pin-top {
   position: fixed;
   width: 100%;
@@ -99,6 +111,15 @@ header::after {
         justify-content: center;
         flex-wrap: wrap;
         background-color: white; } }
+    @media (min-width: 481px) and (max-width: 767px) {
+      .bride-groom .bride-groom-container {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: white; } }
     .bride-groom .bride-groom-container .groom-photo {
       grid-column-start: 1;
       grid-column-end: 2;
@@ -108,6 +129,11 @@ header::after {
         .bride-groom .bride-groom-container .groom-photo {
           width: 100%;
           height: 250px;
+          margin: 2em 2em 2em 2em; } }
+      @media (min-width: 481px) and (max-width: 767px) {
+        .bride-groom .bride-groom-container .groom-photo {
+          width: 100%;
+          height: 450px;
           margin: 2em 2em 2em 2em; } }
     .bride-groom .bride-groom-container .groom-about {
       grid-column-start: 2;
@@ -122,6 +148,11 @@ header::after {
           width: 100%;
           height: 450px;
           margin: 2em 2em 1em 2em; } }
+      @media (min-width: 481px) and (max-width: 767px) {
+        .bride-groom .bride-groom-container .groom-about {
+          width: 100%;
+          height: 300px;
+          margin: 2em 2em 1em 2em; } }
     .bride-groom .bride-groom-container .bride-about {
       grid-column-start: 1;
       grid-column-end: 2;
@@ -135,6 +166,11 @@ header::after {
           width: 100%;
           height: 450px;
           margin: 2em 2em 1em 2em; } }
+      @media (min-width: 481px) and (max-width: 767px) {
+        .bride-groom .bride-groom-container .bride-about {
+          width: 100%;
+          height: 300px;
+          margin: 2em 2em 1em 2em; } }
     .bride-groom .bride-groom-container .bride-photo {
       grid-column-start: 2;
       grid-column-end: 3;
@@ -144,12 +180,22 @@ header::after {
       @media (max-width: 480px) {
         .bride-groom .bride-groom-container .bride-photo {
           width: 100%;
+          height: 450px;
+          margin: 2em 2em 2em 2em; } }
+      @media (min-width: 481px) and (max-width: 767px) {
+        .bride-groom .bride-groom-container .bride-photo {
+          width: 100%;
           height: 250px;
           margin: 2em 2em 2em 2em; } }
     .bride-groom .bride-groom-container .groom-about-para, .bride-groom .bride-groom-container .bride-about-para {
       width: 100%;
       padding: 2em 4em 2em 4em; }
       @media (max-width: 480px) {
+        .bride-groom .bride-groom-container .groom-about-para, .bride-groom .bride-groom-container .bride-about-para {
+          height: 100%;
+          padding: 1em 1em 1em 1em;
+          text-align: left; } }
+      @media (min-width: 481px) and (max-width: 767px) {
         .bride-groom .bride-groom-container .groom-about-para, .bride-groom .bride-groom-container .bride-about-para {
           height: 100%;
           padding: 1em 1em 1em 1em;
@@ -179,6 +225,9 @@ header::after {
       top: 0.4em;
       font-family: 'Great Vibes', cursive; }
       @media (max-width: 480px) {
+        .countdown-timer .countdown-timer-background .join-us-text {
+          display: none; } }
+      @media (min-width: 481px) and (max-width: 767px) {
         .countdown-timer .countdown-timer-background .join-us-text {
           display: none; } }
     .countdown-timer .countdown-timer-background .timer {
@@ -220,6 +269,10 @@ header::after {
     .love-story {
       padding-top: 0;
       margin-top: 3em; } }
+  @media (min-width: 481px) and (max-width: 767px) {
+    .love-story {
+      padding-top: 0;
+      margin-top: 3em; } }
   .love-story .love-birds {
     display: flex;
     justify-content: center; }
@@ -241,6 +294,10 @@ header::after {
       .love-story ul::before {
         left: 10%;
         height: 1970px; } }
+    @media (min-width: 481px) and (max-width: 767px) {
+      .love-story ul::before {
+        left: 15%;
+        height: 2210px; } }
   .love-story ul {
     margin-top: 100px;
     margin-bottom: 24px;
@@ -251,6 +308,9 @@ header::after {
     @media (max-width: 480px) {
       .love-story ul {
         margin: 3em 2em 3em 2em; } }
+    @media (min-width: 481px) and (max-width: 767px) {
+      .love-story ul {
+        margin-bottom: 90px; } }
     .love-story ul li {
       height: 385px;
       display: flex;
@@ -265,10 +325,21 @@ header::after {
           position: relative;
           left: 2em;
           height: 470px; } }
+      @media (min-width: 481px) and (max-width: 767px) {
+        .love-story ul li {
+          display: block;
+          padding-left: 0;
+          padding-right: 0;
+          position: relative;
+          left: 2em;
+          height: 520px; } }
       .love-story ul li .love-story-description h3 {
         font-family: 'Dosis', sans-serif;
         font-size: 1.4em; }
         @media (max-width: 480px) {
+          .love-story ul li .love-story-description h3 {
+            margin-left: 0; } }
+        @media (min-width: 481px) and (max-width: 767px) {
           .love-story ul li .love-story-description h3 {
             margin-left: 0; } }
       .love-story ul li .love-story-description .love-story-date {
@@ -293,6 +364,9 @@ header::after {
         @media (max-width: 480px) {
           .love-story ul li .love-story-photo {
             margin-top: 1em; } }
+        @media (min-width: 481px) and (max-width: 767px) {
+          .love-story ul li .love-story-photo {
+            margin-top: 1em; } }
         .love-story ul li .love-story-photo span {
           position: absolute;
           top: -10%;
@@ -314,14 +388,23 @@ header::after {
       @media (max-width: 480px) {
         .love-story ul li:nth-child(odd) {
           text-align: left; } }
+      @media (min-width: 481px) and (max-width: 767px) {
+        .love-story ul li:nth-child(odd) {
+          text-align: left; } }
       .love-story ul li:nth-child(odd) .love-story-description {
         margin-right: 45px; }
         @media (max-width: 480px) {
           .love-story ul li:nth-child(odd) .love-story-description {
             margin-right: 0; } }
+        @media (min-width: 481px) and (max-width: 767px) {
+          .love-story ul li:nth-child(odd) .love-story-description {
+            margin-right: 0; } }
       .love-story ul li:nth-child(odd) .love-story-photo {
         margin-left: 45px; }
         @media (max-width: 480px) {
+          .love-story ul li:nth-child(odd) .love-story-photo {
+            margin-left: 0; } }
+        @media (min-width: 481px) and (max-width: 767px) {
           .love-story ul li:nth-child(odd) .love-story-photo {
             margin-left: 0; } }
         .love-story ul li:nth-child(odd) .love-story-photo span {
@@ -330,11 +413,18 @@ header::after {
             .love-story ul li:nth-child(odd) .love-story-photo span {
               left: -3.2em;
               top: -22em; } }
+          @media (min-width: 481px) and (max-width: 767px) {
+            .love-story ul li:nth-child(odd) .love-story-photo span {
+              left: -4.8em;
+              top: -16em; } }
     .love-story ul li:nth-child(even) {
       flex-direction: row-reverse; }
       .love-story ul li:nth-child(even) .love-story-description {
         margin-left: 45px; }
         @media (max-width: 480px) {
+          .love-story ul li:nth-child(even) .love-story-description {
+            margin-left: 0; } }
+        @media (min-width: 481px) and (max-width: 767px) {
           .love-story ul li:nth-child(even) .love-story-description {
             margin-left: 0; } }
       .love-story ul li:nth-child(even) .love-story-photo {
@@ -345,6 +435,10 @@ header::after {
             .love-story ul li:nth-child(even) .love-story-photo span {
               left: -3.2em;
               top: -22em; } }
+          @media (min-width: 481px) and (max-width: 767px) {
+            .love-story ul li:nth-child(even) .love-story-photo span {
+              left: -4.8em;
+              top: -16em; } }
   .love-story ul li + li .love-story-description {
     margin-top: 45px; }
 
@@ -378,9 +472,18 @@ header::after {
         margin-top: 3em;
         margin-left: 2em;
         margin-right: 2em; } }
+    @media (min-width: 481px) and (max-width: 767px) {
+      .wedding-events .wedding-event-info {
+        margin: 2em 2em 2em 2em; } }
+    @media (min-width: 768px) and (max-width: 1290px) {
+      .wedding-events .wedding-event-info {
+        margin: 2em 2em 2em 2em; } }
     .wedding-events .wedding-event-info .ceremony, .wedding-events .wedding-event-info .reception {
       display: flex; }
       @media (max-width: 480px) {
+        .wedding-events .wedding-event-info .ceremony, .wedding-events .wedding-event-info .reception {
+          display: block; } }
+      @media (min-width: 481px) and (max-width: 767px) {
         .wedding-events .wedding-event-info .ceremony, .wedding-events .wedding-event-info .reception {
           display: block; } }
       .wedding-events .wedding-event-info .ceremony .ceremony-photo, .wedding-events .wedding-event-info .ceremony .reception-photo, .wedding-events .wedding-event-info .reception .ceremony-photo, .wedding-events .wedding-event-info .reception .reception-photo {
@@ -389,6 +492,10 @@ header::after {
           .wedding-events .wedding-event-info .ceremony .ceremony-photo, .wedding-events .wedding-event-info .ceremony .reception-photo, .wedding-events .wedding-event-info .reception .ceremony-photo, .wedding-events .wedding-event-info .reception .reception-photo {
             margin-right: 0; } }
       @media (max-width: 480px) {
+        .wedding-events .wedding-event-info .ceremony .reception-photo, .wedding-events .wedding-event-info .reception .reception-photo {
+          margin-top: 2em;
+          margin-bottom: 3em; } }
+      @media (min-width: 481px) and (max-width: 767px) {
         .wedding-events .wedding-event-info .ceremony .reception-photo, .wedding-events .wedding-event-info .reception .reception-photo {
           margin-top: 2em;
           margin-bottom: 3em; } }
@@ -564,6 +671,10 @@ header::after {
         margin-left: 2em;
         margin-right: 2em;
         margin-top: 2em; } }
+    @media (min-width: 481px) and (max-width: 767px) {
+      .faq .questions-and-answers-container {
+        margin-left: 2em;
+        margin-right: 2em; } }
     .faq .questions-and-answers-container .questions-and-answers {
       width: 700px; }
       .faq .questions-and-answers-container .questions-and-answers .question-container {

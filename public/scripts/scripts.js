@@ -292,7 +292,7 @@ var submitButton = document.getElementById("groomsmen-box");
 //   top: element.offsetTop
 // }));
 
- $('#home-button').click(function(){
+$('#home-button').click(function(){
     $('body, html').animate({scrollTop: 0}, 700);
   });
 
@@ -317,6 +317,37 @@ $("#faq-button").click(function() {
       $('body, html').animate({ scrollTop: position }, 700); });
 
 $("#rsvp-button").click(function() {
+      var position = $("#scroll-to-rsvp").offset().top; //calculates how far the top of the Carousel is from the top of the page
+      $('body, html').animate({ scrollTop: position }, 700); });
+
+
+// Phone Hamburger Menu Links
+
+$('#home-button-hamburger').click(function(){
+    $('body, html').animate({scrollTop: 0}, 700);
+  });
+
+$("#couple-button-hamburger").click(function() {
+      var position = $("#scroll-to-bride-groom").offset().top; //calculates how far the top of the Carousel is from the top of the page
+      $('body, html').animate({ scrollTop: position }, 700); });
+
+$("#story-button-hamburger").click(function() {
+      var position = $("#scroll-to-story").offset().top; //calculates how far the top of the Carousel is from the top of the page
+      $('body, html').animate({ scrollTop: position }, 700); });
+
+$("#events-button-hamburger").click(function() {
+      var position = $("#scroll-to-events").offset().top; //calculates how far the top of the Carousel is from the top of the page
+      $('body, html').animate({ scrollTop: position }, 700); });
+
+$("#people-button-hamburger").click(function() {
+      var position = $("#scroll-to-bridal-party").offset().top; //calculates how far the top of the Carousel is from the top of the page
+      $('body, html').animate({ scrollTop: position }, 700); });
+
+$("#faq-button-hamburger").click(function() {
+      var position = $("#scroll-to-faq").offset().top; //calculates how far the top of the Carousel is from the top of the page
+      $('body, html').animate({ scrollTop: position }, 700); });
+
+$("#rsvp-button-hamburger").click(function() {
       var position = $("#scroll-to-rsvp").offset().top; //calculates how far the top of the Carousel is from the top of the page
       $('body, html').animate({ scrollTop: position }, 700); });
 

@@ -7,5 +7,6 @@ $gold: #daa520;
 $white: #fff;
 
 $bp-babybear: "(max-width: 480px)";
-$bp-mamabear: "(max-width: 768px)";
-$bp-papabear: "(max-width: 1600px)";
+$bp-mamabear: "(min-width: 481px) and (max-width: 767px)";
+$bp-papabear: "(min-width: 768px) and (max-width: 1290px)";
+

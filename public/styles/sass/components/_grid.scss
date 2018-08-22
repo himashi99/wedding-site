@@ -2,6 +2,10 @@
     height: 100vh;
     min-height: 700px;
 
+    @include bp (mama-bear) {
+        min-height: 0;
+    }
+
     .hero-image {
         width: 100%;
         height: calc(100vh - 50px);
@@ -40,7 +44,12 @@ header {
 
             @include bp (baby-bear) {
                 height: 40px;
-                justify-content: flex-start;
+                justify-content: center;
+            }
+
+            @include bp (mama-bear) {
+                height: 40px;
+                justify-content: center;;
             }
 
             ul {
@@ -62,6 +71,12 @@ header {
                         padding: 0;
                         margin-left: 0.2em;
                         margin-right: 0.2em;
+                    }
+
+                    @include bp (mama-bear) {
+                        padding: 0;
+                        margin-left: 0.5em;
+                        margin-right: 0.5em;
                     }
                 }
 
@@ -176,6 +191,16 @@ header::after {
             background-color: white;
         }
 
+        @include bp (mama-bear) {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: white;
+        }
+
         .groom-photo {
             grid-column-start: 1;
             grid-column-end: 2;
@@ -185,6 +210,12 @@ header::after {
             @include bp (baby-bear) {
                 width: 100%;
                 height: 250px;
+                margin: 2em 2em 2em 2em;
+            }
+
+            @include bp (mama-bear) {
+                width: 100%;
+                height: 450px;
                 margin: 2em 2em 2em 2em;
             }
         }
@@ -203,6 +234,12 @@ header::after {
                 height: 450px;
                 margin: 2em 2em 1em 2em;
             }
+
+            @include bp (mama-bear) {
+                width: 100%;
+                height: 300px;
+                margin: 2em 2em 1em 2em;
+            }
         }
 
         .bride-about {
@@ -219,6 +256,12 @@ header::after {
                 height: 450px;
                 margin: 2em 2em 1em 2em;
             }
+
+            @include bp (mama-bear) {
+                width: 100%;
+                height: 300px;
+                margin: 2em 2em 1em 2em;
+            }
         }
 
         .bride-photo {
@@ -230,6 +273,12 @@ header::after {
 
           @include bp (baby-bear) {
                 width: 100%;
+                height: 450px;
+                margin: 2em 2em 2em 2em;
+            }
+
+            @include bp (mama-bear) {
+                width: 100%;
                 height: 250px;
                 margin: 2em 2em 2em 2em;
             }
@@ -240,6 +289,12 @@ header::after {
             padding: 2em 4em 2em 4em;
 
             @include bp (baby-bear) {
+                height: 100%;
+                padding: 1em 1em 1em 1em;
+                text-align: left;
+            }
+
+            @include bp (mama-bear) {
                 height: 100%;
                 padding: 1em 1em 1em 1em;
                 text-align: left;
@@ -281,6 +336,10 @@ header::after {
             font-family: 'Great Vibes', cursive;
 
             @include bp (baby-bear) {
+                display: none;  
+            }
+
+            @include bp (mama-bear) {
                 display: none;  
             }
         }
@@ -339,6 +398,11 @@ header::after {
         margin-top: 3em;      
     }
 
+    @include bp (mama-bear) {
+        padding-top: 0;
+        margin-top: 3em;      
+    }
+
     .love-birds {
         display: flex;
         justify-content: center;
@@ -367,6 +431,11 @@ header::after {
             left: 10%;  
             height: 1970px;
         }
+
+        @include bp (mama-bear) {
+            left: 15%;  
+            height: 2210px;
+        }
     }
 
     ul {
@@ -379,6 +448,10 @@ header::after {
 
         @include bp (baby-bear) {
             margin: 3em 2em 3em 2em; 
+        }
+
+        @include bp (mama-bear) {
+            margin-bottom: 90px;
         }
 
         li {
@@ -397,6 +470,15 @@ header::after {
                 height: 470px;
             }
 
+            @include bp (mama-bear) {
+                display: block;
+                padding-left: 0;
+                padding-right: 0;
+                position: relative;
+                left: 2em;
+                height: 520px;
+            }
+
             
             .love-story-description {
                 h3 {
@@ -404,6 +486,10 @@ header::after {
                     font-size: 1.4em;
 
                     @include bp (baby-bear) {
+                        margin-left: 0;
+                    }
+
+                    @include bp (mama-bear) {
                         margin-left: 0;
                     }
                 }
@@ -428,6 +514,10 @@ header::after {
                     @include bp (baby-bear) {
                         width: 280px;
                     }
+
+                    // @include bp (mama-bear) {
+                    //     width: 280px;
+                    // }
                 }
             }
 
@@ -436,6 +526,10 @@ header::after {
                 // z-index: -1;
 
                 @include bp (baby-bear) {
+                    margin-top: 1em;   
+                }
+
+                @include bp (mama-bear) {
                     margin-top: 1em;   
                 }
 
@@ -470,10 +564,18 @@ header::after {
                 text-align: left;
             }
 
+            @include bp (mama-bear) {
+                text-align: left;
+            }
+
           .love-story-description {
                 margin-right: 45px;
 
                 @include bp (baby-bear) {
+                    margin-right: 0; 
+                }
+
+                @include bp (mama-bear) {
                     margin-right: 0; 
                 }
           }
@@ -485,12 +587,21 @@ header::after {
                     margin-left: 0;
                 }
 
+                @include bp (mama-bear) {
+                    margin-left: 0;
+                }
+
               span {
                 right: 105%;
 
                 @include bp (baby-bear) {
                     left: -3.2em;
                     top: -22em;
+                }
+
+                @include bp (mama-bear) {
+                    left: -4.8em;
+                    top: -16em;
                 }
               } 
 
@@ -506,6 +617,10 @@ header::after {
                 @include bp (baby-bear) {
                     margin-left: 0;
                 }
+
+                @include bp (mama-bear) {
+                    margin-left: 0;
+                }
           }
 
           .love-story-photo {
@@ -517,6 +632,11 @@ header::after {
                   @include bp (baby-bear) {
                     left: -3.2em;
                     top: -22em;
+                }
+
+                @include bp (mama-bear) {
+                    left: -4.8em;
+                    top: -16em;
                 }
               }
           }
@@ -575,10 +695,22 @@ header::after {
             margin-right: 2em;
         }
 
+        @include bp (mama-bear) {
+            margin: 2em 2em 2em 2em;
+        }
+
+        @include bp (papa-bear) {
+            margin: 2em 2em 2em 2em;
+        }
+
         .ceremony, .reception {
             display: flex;
 
             @include bp (baby-bear) {
+                display: block;  
+            }
+
+            @include bp (mama-bear) {
                 display: block;  
             }
 
@@ -593,6 +725,11 @@ header::after {
             .reception-photo {
 
                 @include bp (baby-bear) {
+                    margin-top: 2em;
+                    margin-bottom: 3em; 
+                }
+
+                @include bp (mama-bear) {
                     margin-top: 2em;
                     margin-bottom: 3em; 
                 }
@@ -870,6 +1007,11 @@ header::after {
             margin-left: 2em;
             margin-right: 2em;
             margin-top: 2em;
+        }
+
+        @include bp (mama-bear) { 
+            margin-left: 2em;
+            margin-right: 2em;
         }
 
         .questions-and-answers {
