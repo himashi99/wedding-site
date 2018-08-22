@@ -980,6 +980,10 @@ header::after {
     z-index: 99;
     /* Make sure it does not overlap */
     cursor: pointer;
-    /* Add a mouse pointer on hover */ } }
+    /* Add a mouse pointer on hover */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */ } }
 
 /*# sourceMappingURL=styles.css.map */
