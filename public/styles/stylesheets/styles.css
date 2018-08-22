@@ -549,8 +549,7 @@ header::after {
   @media (max-width: 480px) {
     .faq {
       height: 3470px;
-      margin-top: 0;
-      height: 2460px; } }
+      margin-top: 0; } }
   .faq .faq-title {
     display: flex;
     justify-content: center; }
@@ -597,7 +596,7 @@ header::after {
       display: flex;
       justify-content: center; }
       .rsvp .rsvp-background .rsvp-title-container .rsvp-title {
-        margin-top: 150px;
+        margin-top: 100px;
         text-align: center;
         color: burlywood; }
         @media (max-width: 480px) {
@@ -617,7 +616,8 @@ header::after {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 50px; }
+      margin-top: 50px;
+      margin-bottom: 100px; }
       .rsvp .rsvp-background .form-container .form-design {
         background-color: rgba(255, 255, 255, 0.1);
         color: aliceblue;
@@ -653,11 +653,11 @@ header::after {
             .rsvp .rsvp-background .form-container form .row-2 {
               display: block;
               height: 100%; } }
-          .rsvp .rsvp-background .form-container form .row-2 .dropdown {
+          .rsvp .rsvp-background .form-container form .row-2 .rsvp-dropdown {
             width: 85px;
             height: 40px; }
             @media (max-width: 480px) {
-              .rsvp .rsvp-background .form-container form .row-2 .dropdown {
+              .rsvp .rsvp-background .form-container form .row-2 .rsvp-dropdown {
                 width: 8em;
                 text-align: center;
                 border: none;

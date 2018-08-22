@@ -851,7 +851,7 @@ header::after {
     @include bp (baby-bear) { 
         height: 3470px;
         margin-top: 0;
-        height: 2460px;
+        // height: 2460px;
     }
 
     .faq-title {
@@ -919,7 +919,7 @@ header::after {
             justify-content: center;
 
             .rsvp-title {
-                margin-top: 150px;
+                margin-top: 100px;
                 text-align: center;
                 color: burlywood;
 
@@ -951,6 +951,7 @@ header::after {
             justify-content: center;
             align-items: center;
             margin-top: 50px;
+            margin-bottom: 100px;
 
             .form-design {
                 background-color: rgba(255,255,255,0.1);
@@ -1000,7 +1001,7 @@ header::after {
                         height: 100%;
                     }
 
-                    .dropdown {
+                    .rsvp-dropdown {
                         width: 85px;
                         height: 40px;
 
