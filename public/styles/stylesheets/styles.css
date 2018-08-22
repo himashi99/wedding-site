@@ -675,6 +675,9 @@ header::after {
           display: flex;
           justify-content: space-evenly;
           margin-bottom: 20px; }
+          @media (max-width: 480px) {
+            .rsvp .rsvp-background .form-container form .row-3 {
+              display: block; } }
           .rsvp .rsvp-background .form-container form .row-3 textarea {
             width: 492px;
             height: 90px;

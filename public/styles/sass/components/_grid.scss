@@ -1035,6 +1035,11 @@ header::after {
                     justify-content: space-evenly;
                     margin-bottom: 20px;
 
+                    @include bp (baby-bear) {
+                        display: block;
+                    }
+
+
                     textarea {
                         width: 492px;
                         height: 90px;
