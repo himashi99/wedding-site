@@ -343,8 +343,8 @@ header::after {
           left: 105%; }
           @media (max-width: 480px) {
             .love-story ul li:nth-child(even) .love-story-photo span {
-              left: -4em;
-              top: -23em; } }
+              left: -3.2em;
+              top: -22em; } }
   .love-story ul li + li .love-story-description {
     margin-top: 45px; }
 
