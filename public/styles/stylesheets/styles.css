@@ -77,7 +77,8 @@ header::after {
 .bride-groom {
   height: 100%;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 1em; }
   .bride-groom .bride-groom-container {
     width: 1140px;
     height: 912px;
@@ -90,12 +91,21 @@ header::after {
       .bride-groom .bride-groom-container {
         margin: 0;
         width: 100%;
-        height: 100%; } }
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: white; } }
     .bride-groom .bride-groom-container .groom-photo {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 1;
       grid-row-end: 2; }
+      @media (max-width: 480px) {
+        .bride-groom .bride-groom-container .groom-photo {
+          width: 100%;
+          height: 250px;
+          margin: 2em 2em 2em 2em; } }
     .bride-groom .bride-groom-container .groom-about {
       grid-column-start: 2;
       grid-column-end: 3;
@@ -104,6 +114,11 @@ header::after {
       display: flex;
       justify-content: center;
       align-items: center; }
+      @media (max-width: 480px) {
+        .bride-groom .bride-groom-container .groom-about {
+          width: 100%;
+          height: 450px;
+          margin: 2em 2em 1em 2em; } }
     .bride-groom .bride-groom-container .bride-about {
       grid-column-start: 1;
       grid-column-end: 2;
@@ -112,25 +127,37 @@ header::after {
       display: flex;
       justify-content: center;
       align-items: center; }
+      @media (max-width: 480px) {
+        .bride-groom .bride-groom-container .bride-about {
+          width: 100%;
+          height: 450px;
+          margin: 2em 2em 1em 2em; } }
     .bride-groom .bride-groom-container .bride-photo {
       grid-column-start: 2;
       grid-column-end: 3;
       grid-row-start: 2;
       grid-row-end: 3;
       background: url("../../assets/images2/bride.jpg") center center/cover no-repeat local; }
+      @media (max-width: 480px) {
+        .bride-groom .bride-groom-container .bride-photo {
+          width: 100%;
+          height: 250px;
+          margin: 2em 2em 2em 2em; } }
     .bride-groom .bride-groom-container .groom-about-para, .bride-groom .bride-groom-container .bride-about-para {
       width: 100%;
       padding: 2em 4em 2em 4em; }
       @media (max-width: 480px) {
         .bride-groom .bride-groom-container .groom-about-para, .bride-groom .bride-groom-container .bride-about-para {
           height: 100%;
-          padding: 1em 1em 1em 1em; } }
+          padding: 1em 1em 1em 1em;
+          text-align: left; } }
     .bride-groom .bride-groom-container .groom-about-para p, .bride-groom .bride-groom-container .bride-about-para p {
       margin-top: 1.5em; }
 
 .countdown-timer {
   width: 100%;
-  height: 370px; }
+  height: 370px;
+  margn-top: 2em; }
   .countdown-timer .countdown-timer-background {
     height: 100%;
     display: flex;
@@ -139,15 +166,18 @@ header::after {
     background: url("../../assets/images2/car-image.jpg") center center/cover no-repeat local;
     padding-left: 3em;
     padding-right: 3em; }
+    @media (max-width: 480px) {
+      .countdown-timer .countdown-timer-background {
+        padding-left: 2em;
+        padding-right: 2em;
+        background: url("../../assets/images2/car-image-phone.jpg") center center/cover no-repeat local; } }
     .countdown-timer .countdown-timer-background .join-us-text {
       position: relative;
       top: 0.4em;
       font-family: 'Great Vibes', cursive; }
       @media (max-width: 480px) {
         .countdown-timer .countdown-timer-background .join-us-text {
-          display: none;
-          padding-left: 2em;
-          padding-right: 2em; } }
+          display: none; } }
     .countdown-timer .countdown-timer-background .timer {
       display: flex;
       justify-content: space-between;
@@ -186,7 +216,7 @@ header::after {
   @media (max-width: 480px) {
     .love-story {
       padding-top: 0;
-      margin-top: 2em; } }
+      margin-top: 3em; } }
   .love-story .love-birds {
     display: flex;
     justify-content: center; }
@@ -217,7 +247,7 @@ header::after {
     list-style: none; }
     @media (max-width: 480px) {
       .love-story ul {
-        margin: 2em 2em 2em 2em; } }
+        margin: 3em 2em 3em 2em; } }
     .love-story ul li {
       height: 385px;
       display: flex;
@@ -319,9 +349,15 @@ header::after {
   display: none; }
 
 .wedding-events {
-  height: 800px;
+  height: 1450px;
   padding-top: 90px;
   padding-bottom: 110px; }
+  @media (max-width: 480px) {
+    .wedding-events {
+      background-color: white !important;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      margin-bottom: 3em; } }
   .wedding-events .love-birds {
     display: flex;
     justify-content: center; }
@@ -335,7 +371,10 @@ header::after {
     margin: 100px 250px 100px 250px; }
     @media (max-width: 480px) {
       .wedding-events .wedding-event-info {
-        margin: 0; } }
+        margin: 0;
+        margin-top: 3em;
+        margin-left: 2em;
+        margin-right: 2em; } }
     .wedding-events .wedding-event-info .ceremony, .wedding-events .wedding-event-info .reception {
       display: flex; }
       @media (max-width: 480px) {
@@ -346,6 +385,10 @@ header::after {
         @media (max-width: 480px) {
           .wedding-events .wedding-event-info .ceremony .ceremony-photo, .wedding-events .wedding-event-info .ceremony .reception-photo, .wedding-events .wedding-event-info .reception .ceremony-photo, .wedding-events .wedding-event-info .reception .reception-photo {
             margin-right: 0; } }
+      @media (max-width: 480px) {
+        .wedding-events .wedding-event-info .ceremony .reception-photo, .wedding-events .wedding-event-info .reception .reception-photo {
+          margin-top: 2em;
+          margin-bottom: 3em; } }
       .wedding-events .wedding-event-info .ceremony .ceremony-photo, .wedding-events .wedding-event-info .reception .ceremony-photo {
         margin-bottom: 3em; }
       .wedding-events .wedding-event-info .ceremony .ceremony-info h3, .wedding-events .wedding-event-info .ceremony .reception-info h3, .wedding-events .wedding-event-info .reception .ceremony-info h3, .wedding-events .wedding-event-info .reception .reception-info h3 {
@@ -376,6 +419,11 @@ header::after {
     background: url("../../assets/images2/engagement-banner-image.jpg") center center/cover no-repeat local;
     padding-left: 3em;
     padding-right: 3em; }
+    @media (max-width: 480px) {
+      .seuss-quote .quote-background {
+        padding-left: 1em;
+        padding-right: 1em;
+        background: url("../../assets/images2/engagement-banner-image-phone.jpg") center center/cover no-repeat local; } }
     .seuss-quote .quote-background .quote-text {
       font-size: 1.6em;
       font-weight: 700;
@@ -390,6 +438,11 @@ header::after {
 
 .bridal-party {
   padding-top: 90px; }
+  @media (max-width: 480px) {
+    .bridal-party {
+      padding-top: 0;
+      margin-top: 3em;
+      background-color: white !important; } }
   .bridal-party .love-birds {
     display: flex;
     justify-content: center; }
@@ -401,6 +454,9 @@ header::after {
       padding: 0.3em 1em; }
   .bridal-party .bridal-party-container {
     margin-top: 100px; }
+    @media (max-width: 480px) {
+      .bridal-party .bridal-party-container {
+        margin-top: 3em; } }
     .bridal-party .bridal-party-container .bridal-party-nav {
       width: 100%;
       height: 45px;
@@ -445,6 +501,9 @@ header::after {
       flex-wrap: wrap;
       margin-top: 60px;
       padding-bottom: 100px; }
+      @media (max-width: 480px) {
+        .bridal-party .bridal-party-container .groomsmen, .bridal-party .bridal-party-container .bridesmaids {
+          padding-bottom: 0; } }
       .bridal-party .bridal-party-container .groomsmen .about-groomsmen, .bridal-party .bridal-party-container .groomsmen .about-bridesmaids, .bridal-party .bridal-party-container .bridesmaids .about-groomsmen, .bridal-party .bridal-party-container .bridesmaids .about-bridesmaids {
         height: 450px;
         background-color: white;
@@ -452,6 +511,10 @@ header::after {
         margin-right: 15px;
         margin-top: 15px;
         margin-bottom: 15px; }
+        @media (max-width: 480px) {
+          .bridal-party .bridal-party-container .groomsmen .about-groomsmen, .bridal-party .bridal-party-container .groomsmen .about-bridesmaids, .bridal-party .bridal-party-container .bridesmaids .about-groomsmen, .bridal-party .bridal-party-container .bridesmaids .about-bridesmaids {
+            margin-left: 0;
+            margin-right: 0; } }
         .bridal-party .bridal-party-container .groomsmen .about-groomsmen .groomsmen-text, .bridal-party .bridal-party-container .groomsmen .about-groomsmen .bridesmaids-text, .bridal-party .bridal-party-container .groomsmen .about-bridesmaids .groomsmen-text, .bridal-party .bridal-party-container .groomsmen .about-bridesmaids .bridesmaids-text, .bridal-party .bridal-party-container .bridesmaids .about-groomsmen .groomsmen-text, .bridal-party .bridal-party-container .bridesmaids .about-groomsmen .bridesmaids-text, .bridal-party .bridal-party-container .bridesmaids .about-bridesmaids .groomsmen-text, .bridal-party .bridal-party-container .bridesmaids .about-bridesmaids .bridesmaids-text {
           height: 160px;
           display: flex;
@@ -476,7 +539,8 @@ header::after {
   height: 2460px; }
   @media (max-width: 480px) {
     .faq {
-      height: 3470px; } }
+      height: 3470px;
+      margin-top: 0; } }
   .faq .faq-title {
     display: flex;
     justify-content: center; }
@@ -830,8 +894,8 @@ header::after {
     display: none; }
 
   .wedding-event-info img {
-    width: 375px;
-    height: 260px; }
+    width: 315px;
+    height: 200px; }
 
   .about-groomsmen img {
     width: 375px;

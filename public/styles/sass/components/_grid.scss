@@ -150,6 +150,7 @@ header::after {
     height: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 1em;
 
 
     .bride-groom-container {
@@ -165,6 +166,10 @@ header::after {
             margin: 0;
             width: 100%;
             height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: white;
         }
 
         .groom-photo {
@@ -172,6 +177,12 @@ header::after {
             grid-column-end: 2;
             grid-row-start: 1;
             grid-row-end: 2;
+
+            @include bp (baby-bear) {
+                width: 100%;
+                height: 250px;
+                margin: 2em 2em 2em 2em;
+            }
         }
 
         .groom-about {
@@ -182,6 +193,12 @@ header::after {
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @include bp (baby-bear) {
+                width: 100%;
+                height: 450px;
+                margin: 2em 2em 1em 2em;
+            }
         }
 
         .bride-about {
@@ -192,6 +209,12 @@ header::after {
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @include bp (baby-bear) {
+                width: 100%;
+                height: 450px;
+                margin: 2em 2em 1em 2em;
+            }
         }
 
         .bride-photo {
@@ -200,6 +223,12 @@ header::after {
           grid-row-start: 2;
           grid-row-end: 3;
           background: url("../../assets/images2/bride.jpg") center center/cover no-repeat local;
+
+          @include bp (baby-bear) {
+                width: 100%;
+                height: 250px;
+                margin: 2em 2em 2em 2em;
+            }
         }
 
         .groom-about-para, .bride-about-para {
@@ -209,6 +238,7 @@ header::after {
             @include bp (baby-bear) {
                 height: 100%;
                 padding: 1em 1em 1em 1em;
+                text-align: left;
             }
         }
 
@@ -221,6 +251,7 @@ header::after {
 .countdown-timer {
     width: 100%;
     height: 370px; 
+    margn-top: 2em;
 
     .countdown-timer-background {
         // width: 100%;
@@ -234,6 +265,12 @@ header::after {
         padding-left: 3em;
         padding-right: 3em;
 
+        @include bp (baby-bear) {    
+            padding-left: 2em;
+            padding-right: 2em;
+            background: url("../../assets/images2/car-image-phone.jpg") center center/cover no-repeat local;
+        }
+
         .join-us-text {
             position: relative;
             top: 0.4em;
@@ -241,8 +278,6 @@ header::after {
 
             @include bp (baby-bear) {
                 display: none;  
-                padding-left: 2em;
-                padding-right: 2em;
             }
         }
 
@@ -297,7 +332,7 @@ header::after {
     // background-color: #fafafa;
     @include bp (baby-bear) {
         padding-top: 0;
-        margin-top: 2em;      
+        margin-top: 3em;      
     }
 
     .love-birds {
@@ -339,7 +374,7 @@ header::after {
         list-style: none;
 
         @include bp (baby-bear) {
-            margin: 2em 2em 2em 2em; 
+            margin: 3em 2em 3em 2em; 
         }
 
         li {
@@ -500,9 +535,16 @@ header::after {
 
 
 .wedding-events {
-    height: 800px;
+    height: 1450px;
     padding-top: 90px;
     padding-bottom: 110px;
+
+    @include bp (baby-bear) { 
+        background-color: white !important;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 3em;
+    }
 
     .love-birds {
         display: flex;
@@ -523,7 +565,10 @@ header::after {
         margin: 100px 250px 100px 250px;
 
         @include bp (baby-bear) {
-            margin: 0;  
+            margin: 0;
+            margin-top: 3em;  
+            margin-left: 2em;
+            margin-right: 2em;
         }
 
         .ceremony, .reception {
@@ -538,6 +583,14 @@ header::after {
 
                 @include bp (baby-bear) {
                     margin-right: 0;  
+                }
+            }
+
+            .reception-photo {
+
+                @include bp (baby-bear) {
+                    margin-top: 2em;
+                    margin-bottom: 3em; 
                 }
             }
 
@@ -594,6 +647,12 @@ header::after {
         padding-left: 3em;
         padding-right: 3em;
 
+        @include bp (baby-bear) {
+            padding-left: 1em;
+            padding-right: 1em; 
+            background: url("../../assets/images2/engagement-banner-image-phone.jpg") center center/cover no-repeat local;
+        }
+
         .quote-text {
             font-size: 1.6em;
             font-weight: 700;
@@ -624,6 +683,12 @@ header::after {
     padding-top: 90px;
     // background-color: #fafafa;
 
+    @include bp (baby-bear) {
+        padding-top: 0;
+        margin-top: 3em;
+        background-color: white !important;
+    }
+
 
     .love-birds {
         display: flex;
@@ -642,6 +707,11 @@ header::after {
 
     .bridal-party-container {
         margin-top: 100px;
+
+        @include bp (baby-bear) {
+
+            margin-top: 3em;
+        }
 
         .bridal-party-nav {   
             width: 100%;
@@ -707,6 +777,11 @@ header::after {
             flex-wrap: wrap;
             margin-top: 60px;
             padding-bottom: 100px;
+
+            @include bp (baby-bear) {
+
+                padding-bottom: 0;
+            }
            
 
             .about-groomsmen, .about-bridesmaids {
@@ -716,6 +791,11 @@ header::after {
                 margin-right: 15px;
                 margin-top: 15px;
                 margin-bottom: 15px;
+
+                @include bp (baby-bear) {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
 
                 .groomsmen-text, .bridesmaids-text {
                     height: 160px;
@@ -752,7 +832,8 @@ header::after {
     height: 2460px;
 
     @include bp (baby-bear) { 
-            height: 3470px;
+        height: 3470px;
+        margin-top: 0;
     }
 
     .faq-title {
