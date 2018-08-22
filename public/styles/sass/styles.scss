@@ -236,14 +236,17 @@ header::after {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
 }
 
 .dropdown-content a:hover {background-color: #f1f1f1}
 
-.dropdown:hover .dropdown-content {
-    display: block;
-    width: 10em;
-}
+// .dropdown:hover .dropdown-content {
+//     display: block;
+//     width: 10em;
+// }
 
 .dropdown:hover .dropbtn {
     background-color: white;
@@ -256,6 +259,11 @@ header::after {
     background-color: goldenrod;
     margin: 6px 0;
     margin-right: 1em;
+}
+
+.show-hamburger-menu {
+    display: block;
+    width: 10em;
 }
 
 

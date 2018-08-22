@@ -339,9 +339,19 @@ $("#rsvp-button").click(function() {
 // });
 
 
+let dropdownButton = document.getElementById("dropdown-button");
+let dropdownItems = document.getElementById("dropdown-items");
 
+dropdownButton.addEventListener("click", function() {
+    console.log("Hi")
 
-
+    if(dropdownItems.classList.contains("show-hamburger-menu")) {
+          dropdownItems.classList.remove("show-hamburger-menu");
+        } else {
+          dropdownItems.classList.add("show-hamburger-menu");
+          
+        }
+});
 
 
 

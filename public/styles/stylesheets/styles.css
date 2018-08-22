@@ -944,14 +944,13 @@ header::after {
     color: goldenrod;
     padding: 12px 16px;
     text-decoration: none;
-    display: block; }
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400; }
 
   .dropdown-content a:hover {
     background-color: #f1f1f1; }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-    width: 10em; }
 
   .dropdown:hover .dropbtn {
     background-color: white; }
@@ -961,6 +960,10 @@ header::after {
     height: 3px;
     background-color: goldenrod;
     margin: 6px 0;
-    margin-right: 1em; } }
+    margin-right: 1em; }
+
+  .show-hamburger-menu {
+    display: block;
+    width: 10em; } }
 
 /*# sourceMappingURL=styles.css.map */
