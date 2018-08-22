@@ -511,6 +511,9 @@ input[type="text"]:focus {
   color: gainsboro;
   letter-spacing: 0.05em;
   font-size: 5em; }
+  @media (max-width: 480px) {
+    .names h1 {
+      font-size: 3em; } }
 .names h2 {
   font-family: "Dosis", sans-serif;
   font-size: 1.7em;
@@ -665,8 +668,5 @@ header::after {
 @media only screen and (max-width: 480px) {
   body {
     background-color: green !important; } }
-@media only screen and (max-width: 480px) {
-  .names {
-    top: 27em; } }
 
 /*# sourceMappingURL=styles.css.map */

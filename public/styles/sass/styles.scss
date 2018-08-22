@@ -1,6 +1,7 @@
 // @import "base/mixins";
 @import "base/reset";
 @import "base/variables";
+@import "base/mixins";
 
 
 @import "components/buttons";
@@ -142,11 +143,32 @@ header::after {
     }
 }
 
-@media only screen and (max-width: 480px) {
-    .names {
-        top: 27em;
-    }
-}
+// @media only screen and (max-width: 480px) {
+//     .names {
+//         top: 27em;
+//     }
+// }
+
+// @media only screen and (max-width: 480px) {
+
+
+
+    // .hero-image-container {
+
+    //     .hero-image {
+
+    //         .names {
+    //             @include bp (baby-bear) {
+    //                 top: 27em;
+    //             }
+    //         }
+    //     }
+    // }
+// }
+
+// $bp1: "(max-width: 480px)";
+// $bp2: "(max-width: 768px) and (min-width: 520px)";
+// $bp3: "(min-width: 1024px)";
 
 
 
