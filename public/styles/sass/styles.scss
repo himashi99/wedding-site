@@ -120,6 +120,11 @@ header::after {
     .question-answer-hide {
         height: 0px;
         opacity: 0;
+
+        @include bp (baby-bear) {
+            height: 57px;  
+            opacity: 1;
+        }
     }
 
     .question-answer-show {
@@ -173,11 +178,29 @@ header::after {
 @media only screen and (max-width: 480px) { 
 
    .love-story-image1{
-     display: none;
+        display: none;
    }
 
    .love-story-image2{
-     display: block;
+        display: block;
+   }
+
+   .arrow {
+        display: none;
+   }
+
+   .wedding-event-info {
+        img {
+            width: 375px;
+            height: 260px;
+        }
+   }
+   
+    .about-groomsmen {
+        img {
+            width: 375px;
+            height: 260px; 
+        }
    }
 }
 

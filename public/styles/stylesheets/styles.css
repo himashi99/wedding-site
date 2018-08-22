@@ -145,7 +145,9 @@ header::after {
       font-family: 'Great Vibes', cursive; }
       @media (max-width: 480px) {
         .countdown-timer .countdown-timer-background .join-us-text {
-          display: none; } }
+          display: none;
+          padding-left: 2em;
+          padding-right: 2em; } }
     .countdown-timer .countdown-timer-background .timer {
       display: flex;
       justify-content: space-between;
@@ -166,7 +168,8 @@ header::after {
         border-radius: 5px; }
         @media (max-width: 480px) {
           .countdown-timer .countdown-timer-background .timer .timer-box-container {
-            width: 70px; } }
+            width: 50px;
+            height: 60px; } }
         .countdown-timer .countdown-timer-background .timer .timer-box-container .timer-number {
           display: flex;
           justify-content: center;
@@ -470,7 +473,10 @@ header::after {
 .faq {
   margin-top: 90px;
   margin-bottom: 90px;
-  height: 1650px; }
+  height: 2460px; }
+  @media (max-width: 480px) {
+    .faq {
+      height: 3470px; } }
   .faq .faq-title {
     display: flex;
     justify-content: center; }
@@ -480,10 +486,18 @@ header::after {
     margin-left: 230px;
     margin-right: 230px;
     margin-top: 50px; }
+    @media (max-width: 480px) {
+      .faq .questions-and-answers-container {
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-top: 2em; } }
     .faq .questions-and-answers-container .questions-and-answers {
       width: 700px; }
       .faq .questions-and-answers-container .questions-and-answers .question-container {
         padding: 25px 0 25px 10px; }
+        @media (max-width: 480px) {
+          .faq .questions-and-answers-container .questions-and-answers .question-container {
+            padding: 20px 10px 20px 10px; } }
         .faq .questions-and-answers-container .questions-and-answers .question-container .question-title {
           display: flex;
           justify-content: space-between; }
@@ -494,9 +508,13 @@ header::after {
           -moz-transition: all 0.3s ease-out;
           -o-transition: all 0.3s ease-out;
           transition: all 0.3s ease-out; }
+          @media (max-width: 480px) {
+            .faq .questions-and-answers-container .questions-and-answers .question-container .question-answer {
+              height: 8em;
+              padding-right: 0; } }
 
 .rsvp {
-  height: 800px; }
+  height: 100%; }
   .rsvp .rsvp-background {
     width: 100%;
     height: 100%;
@@ -508,6 +526,9 @@ header::after {
         margin-top: 150px;
         text-align: center;
         color: burlywood; }
+        @media (max-width: 480px) {
+          .rsvp .rsvp-background .rsvp-title-container .rsvp-title {
+            margin-top: 4em; } }
         .rsvp .rsvp-background .rsvp-title-container .rsvp-title h1 {
           font-family: 'Great Vibes', cursive;
           font-size: 5em; }
@@ -515,6 +536,9 @@ header::after {
           font-size: 2em;
           font-weight: 500;
           font-style: italic; }
+          @media (max-width: 480px) {
+            .rsvp .rsvp-background .rsvp-title-container .rsvp-title h3 {
+              font-size: 1.5em; } }
     .rsvp .rsvp-background .form-container {
       display: flex;
       justify-content: center;
@@ -534,12 +558,16 @@ header::after {
         width: 600px; }
         @media (max-width: 480px) {
           .rsvp .rsvp-background .form-container form {
-            width: 480px; } }
+            text-align: center; } }
         .rsvp .rsvp-background .form-container form .row-1 {
           display: flex;
           justify-content: space-around;
           margin-bottom: 20px;
           height: 80px; }
+          @media (max-width: 480px) {
+            .rsvp .rsvp-background .form-container form .row-1 {
+              display: block;
+              height: 100%; } }
           .rsvp .rsvp-background .form-container form .row-1 .form-design {
             wdith: 210px; }
         .rsvp .rsvp-background .form-container form .row-2 {
@@ -547,9 +575,17 @@ header::after {
           justify-content: space-around;
           margin-bottom: 20px;
           height: 80px; }
+          @media (max-width: 480px) {
+            .rsvp .rsvp-background .form-container form .row-2 {
+              display: block;
+              height: 100%; } }
           .rsvp .rsvp-background .form-container form .row-2 .dropdown {
             width: 85px;
             height: 40px; }
+            @media (max-width: 480px) {
+              .rsvp .rsvp-background .form-container form .row-2 .dropdown {
+                width: 8em;
+                text-align: center; } }
           .rsvp .rsvp-background .form-container form .row-2 span {
             color: aliceblue;
             font-family: 'Open Sans', sans-serif;
@@ -558,6 +594,9 @@ header::after {
             letter-spacing: 1px; }
           .rsvp .rsvp-background .form-container form .row-2 #no-response {
             line-height: 25px; }
+        @media (max-width: 480px) {
+          .rsvp .rsvp-background .form-container form .row-2 > div {
+            margin-bottom: 20px; } }
         .rsvp .rsvp-background .form-container form .row-3 {
           display: flex;
           justify-content: space-evenly;
@@ -569,6 +608,9 @@ header::after {
             letter-spacing: 1px;
             font-family: 'Open Sans', sans-serif;
             resize: none; }
+            @media (max-width: 480px) {
+              .rsvp .rsvp-background .form-container form .row-3 textarea {
+                width: 260px; } }
         .rsvp .rsvp-background .form-container form label {
           display: block;
           color: burlywood;
@@ -594,8 +636,16 @@ header::after {
             font-family: 'Dosis', sans-serif;
             font-weight: 600;
             font-size: 0.9em; }
+            @media (max-width: 480px) {
+              .rsvp .rsvp-background .form-container form .row-4 button {
+                margin-bottom: 4em; } }
           .rsvp .rsvp-background .form-container form .row-4 button:hover {
             background: #9fc2bc radial-gradient(circle, transparent 1%, #9fc2bc 1%) center/15000%; }
+
+@media (max-width: 480px) {
+  .first-radio {
+    position: relative;
+    right: 0.55em; } }
 
 input[type="text"]:focus {
   outline: none; }
@@ -761,6 +811,10 @@ header::after {
   .question-container .question-answer-hide {
     height: 0px;
     opacity: 0; }
+    @media (max-width: 480px) {
+      .question-container .question-answer-hide {
+        height: 57px;
+        opacity: 1; } }
   .question-container .question-answer-show {
     height: 57px;
     opaicty: 1; }
@@ -770,6 +824,17 @@ header::after {
     display: none; }
 
   .love-story-image2 {
-    display: block; } }
+    display: block; }
+
+  .arrow {
+    display: none; }
+
+  .wedding-event-info img {
+    width: 375px;
+    height: 260px; }
+
+  .about-groomsmen img {
+    width: 375px;
+    height: 260px; } }
 
 /*# sourceMappingURL=styles.css.map */

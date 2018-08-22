@@ -241,6 +241,8 @@ header::after {
 
             @include bp (baby-bear) {
                 display: none;  
+                padding-left: 2em;
+                padding-right: 2em;
             }
         }
 
@@ -265,7 +267,8 @@ header::after {
             border-radius: 5px;
 
             @include bp (baby-bear) {
-                width: 70px;
+                width: 50px;
+                height: 60px;
             }
               
               .timer-number {
@@ -746,7 +749,11 @@ header::after {
 .faq {
     margin-top: 90px;
     margin-bottom: 90px;
-    height: 1650px;
+    height: 2460px;
+
+    @include bp (baby-bear) { 
+            height: 3470px;
+    }
 
     .faq-title {
         display: flex;
@@ -760,12 +767,22 @@ header::after {
         margin-right: 230px;
         margin-top: 50px;
 
+        @include bp (baby-bear) {
+            margin-left: 2em;
+            margin-right: 2em;
+            margin-top: 2em;
+        }
+
         .questions-and-answers {
             width: 700px;
     
 
             .question-container {
                 padding: 25px 0 25px 10px;
+
+                @include bp (baby-bear) {
+                    padding: 20px 10px 20px 10px;
+                }
 
                 .question-title {
                     display: flex;
@@ -779,6 +796,11 @@ header::after {
                     -moz-transition: all 0.3s ease-out;
                     -o-transition: all 0.3s ease-out;
                     transition: all 0.3s ease-out;
+
+                    @include bp (baby-bear) {
+                        height: 8em;
+                        padding-right: 0;
+                    }
                 }
             }
         }
@@ -786,7 +808,7 @@ header::after {
 }
 
 .rsvp {
-    height: 800px;
+    height: 100%;
 
     .rsvp-background {
         width: 100%;
@@ -802,6 +824,10 @@ header::after {
                 text-align: center;
                 color: burlywood;
 
+                @include bp (baby-bear) {
+                    margin-top: 4em;
+                }
+
                 h1 {
                     font-family: 'Great Vibes', cursive;
                     font-size: 5em; 
@@ -813,6 +839,10 @@ header::after {
                     // font-family: 'Dosis', sans-serif;
                     font-weight: 500;
                     font-style: italic;
+
+                    @include bp (baby-bear) {
+                        font-size: 1.5em;
+                    }
                 }
             }
 
@@ -841,7 +871,7 @@ header::after {
                 width: 600px;
 
                 @include bp (baby-bear) {
-                    width: 480px;
+                    text-align: center;
                 }
 
                 .row-1 {
@@ -849,6 +879,11 @@ header::after {
                     justify-content: space-around;
                     margin-bottom: 20px;
                     height: 80px;
+
+                    @include bp (baby-bear) {
+                        display: block;
+                        height: 100%;
+                    }
 
                     .form-design {
                         wdith: 210px;
@@ -861,9 +896,19 @@ header::after {
                     margin-bottom: 20px;
                     height: 80px;
 
+                    @include bp (baby-bear) {
+                        display: block;
+                        height: 100%;
+                    }
+
                     .dropdown {
                         width: 85px;
                         height: 40px;
+
+                        @include bp (baby-bear) {
+                            width: 8em;
+                            text-align: center;
+                        }
                     }
 
                     span {
@@ -877,7 +922,13 @@ header::after {
                     #no-response {
                         line-height: 25px;
                     }
+                }
 
+                .row-2 > div {
+
+                    @include bp (baby-bear) {
+                        margin-bottom: 20px;
+                    }
                 }
 
                 .row-3 {
@@ -892,6 +943,10 @@ header::after {
                         letter-spacing: 1px;
                         font-family: 'Open Sans', sans-serif;
                         resize: none;
+
+                        @include bp (baby-bear) {
+                            width: 260px;
+                        }
                     }
                 }
                 
@@ -924,6 +979,10 @@ header::after {
                         font-family: 'Dosis', sans-serif;
                         font-weight: 600;
                         font-size: 0.9em;
+
+                        @include bp (baby-bear) {
+                            margin-bottom: 4em;
+                        }
                     }
 
                     button:hover {
@@ -940,6 +999,14 @@ header::after {
             
         }
 
+    }
+}
+
+.first-radio {
+
+    @include bp (baby-bear) {
+        position: relative;
+        right: 0.55em;
     }
 }
 
