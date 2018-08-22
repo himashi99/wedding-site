@@ -410,7 +410,6 @@ header::after {
         margin-top: 5px; }
 
 .seuss-quote {
-  width: 100%;
   height: 370px; }
   .seuss-quote .quote-background {
     height: 100%;
@@ -910,6 +909,9 @@ header::after {
 
   .about-groomsmen img {
     width: 375px;
-    height: 260px; } }
+    height: 260px; }
+
+  body {
+    background-color: red; } }
 
 /*# sourceMappingURL=styles.css.map */
