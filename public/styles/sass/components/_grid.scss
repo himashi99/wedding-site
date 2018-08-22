@@ -665,6 +665,10 @@ header::after {
             line-height: 1.5;
             letter-spacing: 0.05em;
 
+            @include bp (baby-bear) {
+                font-size: 1em !important;
+            }
+
           // .a {
           //   font-size: 2em;
           //   color: mistyrose;
@@ -675,7 +679,15 @@ header::after {
             .seuss {
                 margin-top: 0.7em;
                 margin-left: 0.7em;
+
+                @include bp (baby-bear) {
+                    font-size: 1em !important;
+                }
             }
+        }
+
+        .quote-text p {
+
         }
     }
 }

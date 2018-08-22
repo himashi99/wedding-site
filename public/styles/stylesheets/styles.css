@@ -434,9 +434,15 @@ header::after {
       font-family: 'Shadows Into Light', cursive;
       line-height: 1.5;
       letter-spacing: 0.05em; }
+      @media (max-width: 480px) {
+        .seuss-quote .quote-background .quote-text {
+          font-size: 1em !important; } }
       .seuss-quote .quote-background .quote-text .seuss {
         margin-top: 0.7em;
         margin-left: 0.7em; }
+        @media (max-width: 480px) {
+          .seuss-quote .quote-background .quote-text .seuss {
+            font-size: 1em !important; } }
 
 .bridal-party {
   padding-top: 90px; }
