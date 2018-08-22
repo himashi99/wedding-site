@@ -137,11 +137,11 @@ header::after {
 //     }
 // }
 
-@media only screen and (max-width: 480px) {
-    body {
-        background-color: green !important;
-    }
-}
+// @media only screen and (max-width: 480px) {
+//     body {
+//         background-color: green !important;
+//     }
+// }
 
 // @media only screen and (max-width: 480px) {
 //     .names {
@@ -170,5 +170,14 @@ header::after {
 // $bp2: "(max-width: 768px) and (min-width: 520px)";
 // $bp3: "(min-width: 1024px)";
 
+@media only screen and (max-width: 480px) { 
 
+   .love-story-image1{
+     display: none;
+   }
+
+   .love-story-image2{
+     display: block;
+   }
+}
 

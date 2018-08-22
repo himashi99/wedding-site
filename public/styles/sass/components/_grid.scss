@@ -10,6 +10,10 @@
         display: flex;
         justify-content: center;
 
+        @include bp (baby-bear) {
+            height: 100%;
+        }
+
         .names {
             height: 260px;
             text-align: center;
@@ -30,8 +34,18 @@ header {
             align-items: center;
             justify-content: flex-end;
 
+            @include bp (baby-bear) {
+                height: 40px;
+                justify-content: flex-start;
+            }
+
             ul {
                 margin-right: 4em;
+
+                @include bp (baby-bear) {
+                    padding-left: 0;
+                    margin-right: 0;
+                }
 
                 a {
                     margin-left: 1em;
@@ -39,6 +53,12 @@ header {
                     text-decoration: none;
                     font-weight: 400;
                     padding: 10px;
+
+                    @include bp (baby-bear) {
+                        padding: 0;
+                        margin-left: 0.2em;
+                        margin-right: 0.2em;
+                    }
                 }
 
             }
@@ -59,6 +79,10 @@ header {
 
     .pin-bottom {
         position: relative;
+
+        @include bp (baby-bear) {
+            position: fixed;
+        }
     }
 }
 
@@ -116,6 +140,10 @@ header::after {
     width: 100%;
     height: 1px;
     bottom: 2px;
+
+    @include bp (baby-bear) {
+        display: none;
+    }
 }
 
 .bride-groom {
@@ -132,6 +160,12 @@ header::after {
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 50% 50%;
+
+        @include bp (baby-bear) {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
 
         .groom-photo {
             grid-column-start: 1;
@@ -171,6 +205,11 @@ header::after {
         .groom-about-para, .bride-about-para {
             width: 100%;
             padding: 2em 4em 2em 4em;
+
+            @include bp (baby-bear) {
+                height: 100%;
+                padding: 1em 1em 1em 1em;
+            }
         }
 
         .groom-about-para p, .bride-about-para p {
@@ -199,6 +238,10 @@ header::after {
             position: relative;
             top: 0.4em;
             font-family: 'Great Vibes', cursive;
+
+            @include bp (baby-bear) {
+                display: none;  
+            }
         }
 
         .timer {
@@ -220,6 +263,10 @@ header::after {
             padding: 0.3em;
             border: 5px solid rgba(0, 0, 0, 0.1);
             border-radius: 5px;
+
+            @include bp (baby-bear) {
+                width: 70px;
+            }
               
               .timer-number {
                   display: flex;
@@ -245,7 +292,10 @@ header::after {
   // height: 2000px;
     padding-top: 90px;
     // background-color: #fafafa;
-
+    @include bp (baby-bear) {
+        padding-top: 0;
+        margin-top: 2em;      
+    }
 
     .love-birds {
         display: flex;
@@ -270,15 +320,24 @@ header::after {
         left: 50%;
         transform: translateX(-50%);
         background: #ededed;
+
+        @include bp (baby-bear) {
+            left: 10%;  
+            height: 2010px;
+        }
     }
 
     ul {
-      margin-top: 100px;
-      margin-bottom: 24px;
-      margin-left: 130px;
-      margin-right: 130px;
-      padding-left: 0;
-      list-style: none;
+        margin-top: 100px;
+        margin-bottom: 24px;
+        margin-left: 130px;
+        margin-right: 130px;
+        padding-left: 0;
+        list-style: none;
+
+        @include bp (baby-bear) {
+            margin: 2em 2em 2em 2em; 
+        }
 
         li {
             height: 385px;
@@ -287,11 +346,24 @@ header::after {
             padding-left: 100px;
             padding-right: 100px;
 
+            @include bp (baby-bear) {
+                display: block;
+                padding-left: 0;
+                padding-right: 0;
+                position: relative;
+                left: 3em;
+                height: 470px;
+            }
+
             
             .love-story-description {
                 h3 {
-                  font-family: 'Dosis', sans-serif;
-                  font-size: 1.4em;
+                    font-family: 'Dosis', sans-serif;
+                    font-size: 1.4em;
+
+                    @include bp (baby-bear) {
+                        margin-left: 0;
+                    }
                 }
 
                 .love-story-date {
@@ -310,14 +382,20 @@ header::after {
                     color: #767878;
                     text-transform: none;
                     font-size: 1.2em;
+
+                    @include bp (baby-bear) {
+                        width: 230px;
+                    }
                 }
-
-
             }
 
             .love-story-photo {
                 position: relative;
                 // z-index: -1;
+
+                @include bp (baby-bear) {
+                    margin-top: 1em;   
+                }
 
                 span {
                     position: absolute;
@@ -346,14 +424,32 @@ header::after {
         li:nth-child(odd) {
             text-align: right;
 
+            @include bp (baby-bear) {
+                text-align: left;
+            }
+
           .love-story-description {
-              margin-right: 45px;
+                margin-right: 45px;
+
+                @include bp (baby-bear) {
+                    margin-right: 0; 
+                }
           }
+
           .love-story-photo {
-              margin-left: 45px;
+                margin-left: 45px;
+
+                @include bp (baby-bear) {
+                    margin-left: 0;
+                }
 
               span {
-                  right: 105%;
+                right: 105%;
+
+                @include bp (baby-bear) {
+                    left: -4em;
+                    top: -23em;
+                }
               } 
 
           }
@@ -363,13 +459,23 @@ header::after {
             flex-direction: row-reverse;
 
           .love-story-description {
-              margin-left: 45px;
+                margin-left: 45px;
+
+                @include bp (baby-bear) {
+                    margin-left: 0;
+                }
           }
+
           .love-story-photo {
               margin-right: 45px;
 
               span {
                   left: 105%;
+
+                  @include bp (baby-bear) {
+                    left: -4em;
+                    top: -23em;
+                }
               }
           }
         } 
@@ -382,6 +488,10 @@ header::after {
             }
 
     }
+}
+
+.love-story-image2 {
+    display: none;
 }
 
 
@@ -409,11 +519,23 @@ header::after {
     .wedding-event-info {
         margin: 100px 250px 100px 250px;
 
+        @include bp (baby-bear) {
+            margin: 0;  
+        }
+
         .ceremony, .reception {
             display: flex;
 
+            @include bp (baby-bear) {
+                display: block;  
+            }
+
             .ceremony-photo, .reception-photo {
                 margin-right: 4em;
+
+                @include bp (baby-bear) {
+                    margin-right: 0;  
+                }
             }
 
             .ceremony-photo {
@@ -717,6 +839,10 @@ header::after {
 
             form {
                 width: 600px;
+
+                @include bp (baby-bear) {
+                    width: 480px;
+                }
 
                 .row-1 {
                     display: flex;
