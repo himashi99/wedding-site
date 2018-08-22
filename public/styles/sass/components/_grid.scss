@@ -1,4 +1,4 @@
-.hero-container {
+.hero-image-container {
     height: 100vh;
     min-height: 700px;
 
@@ -165,7 +165,7 @@ header::after {
           grid-column-end: 3;
           grid-row-start: 2;
           grid-row-end: 3;
-          background: url(https://res.cloudinary.com/dzz2aiwnj/image/upload/v1533182881/alvin-mahmudov-172241-unsplash.jpg) center center/cover no-repeat local;
+          background: url("../../assets/images2/bride.jpg") center center/cover no-repeat local;
         }
 
         .groom-about-para, .bride-about-para {
@@ -189,13 +189,13 @@ header::after {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background: url(https://res.cloudinary.com/dzz2aiwnj/image/upload/v1533825638/car3.jpg) center center/cover no-repeat local;
+        background: url("../../assets/images2/car-image.jpg") center center/cover no-repeat local;
         // background-attachment: fixed;
         // color: white;
         padding-left: 3em;
         padding-right: 3em;
 
-        .fun-begins-text {
+        .join-us-text {
             position: relative;
             top: 0.4em;
             font-family: 'Great Vibes', cursive;
@@ -209,7 +209,7 @@ header::after {
           position: relative;
           top: 2em;
 
-          .timer-box {
+          .timer-box-container {
             width: 128px;
             height: 79px;
             background-color: rgba(255, 255, 255, 0.9);
@@ -454,7 +454,7 @@ header::after {
     }
 }
 
-.quote-section {
+.seuss-quote {
     width: 100%;
     height: 370px; 
 
@@ -463,7 +463,7 @@ header::after {
         height: 100%;
         display: flex;
         align-items: center;
-        background: url(https://res.cloudinary.com/dzz2aiwnj/image/upload/v1533851015/cropwall_copy.jpg) center center/cover no-repeat local;
+        background: url("../../assets/images2/engagement-banner-image.jpg") center center/cover no-repeat local;
         // background-attachment: fixed;
         // color: white;
         padding-left: 3em;
@@ -669,7 +669,7 @@ header::after {
     .rsvp-background {
         width: 100%;
         height: 100%;
-        background: url(https://res.cloudinary.com/dzz2aiwnj/image/upload/v1534448213/flowerbg-dark.jpg) center center/cover no-repeat local;
+        background: url("../../assets/images2/rsvp-flower-bg.jpg") center center/cover no-repeat local;
         
         .rsvp-title-container {
             display: flex;

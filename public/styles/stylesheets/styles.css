@@ -1,17 +1,17 @@
 * {
   margin: 0; }
 
-.hero-container {
+.hero-image-container {
   height: 100vh;
   min-height: 700px; }
-  .hero-container .hero-image {
+  .hero-image-container .hero-image {
     width: 100%;
     height: calc(100vh - 50px);
     left: 0;
     top: 0;
     display: flex;
     justify-content: center; }
-    .hero-container .hero-image .names {
+    .hero-image-container .hero-image .names {
       height: 260px;
       text-align: center;
       position: relative;
@@ -90,7 +90,7 @@ header::after {
       grid-column-end: 3;
       grid-row-start: 2;
       grid-row-end: 3;
-      background: url(https://res.cloudinary.com/dzz2aiwnj/image/upload/v1533182881/alvin-mahmudov-172241-unsplash.jpg) center center/cover no-repeat local; }
+      background: url("../../assets/images2/bride.jpg") center center/cover no-repeat local; }
     .bride-groom .bride-groom-container .groom-about-para, .bride-groom .bride-groom-container .bride-about-para {
       width: 100%;
       padding: 2em 4em 2em 4em; }
@@ -105,10 +105,10 @@ header::after {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: url(https://res.cloudinary.com/dzz2aiwnj/image/upload/v1533825638/car3.jpg) center center/cover no-repeat local;
+    background: url("../../assets/images2/car-image.jpg") center center/cover no-repeat local;
     padding-left: 3em;
     padding-right: 3em; }
-    .countdown-timer .countdown-timer-background .fun-begins-text {
+    .countdown-timer .countdown-timer-background .join-us-text {
       position: relative;
       top: 0.4em;
       font-family: 'Great Vibes', cursive; }
@@ -119,7 +119,7 @@ header::after {
       height: 114px;
       position: relative;
       top: 2em; }
-      .countdown-timer .countdown-timer-background .timer .timer-box {
+      .countdown-timer .countdown-timer-background .timer .timer-box-container {
         width: 128px;
         height: 79px;
         background-color: rgba(255, 255, 255, 0.9);
@@ -130,15 +130,15 @@ header::after {
         padding: 0.3em;
         border: 5px solid rgba(0, 0, 0, 0.1);
         border-radius: 5px; }
-        .countdown-timer .countdown-timer-background .timer .timer-box .timer-number {
+        .countdown-timer .countdown-timer-background .timer .timer-box-container .timer-number {
           display: flex;
           justify-content: center;
           align-items: center; }
-          .countdown-timer .countdown-timer-background .timer .timer-box .timer-number p {
+          .countdown-timer .countdown-timer-background .timer .timer-box-container .timer-number p {
             font-size: 2em;
             color: goldenrod;
             font-family: 'Cousine', monospace; }
-        .countdown-timer .countdown-timer-background .timer .timer-box .timer-label {
+        .countdown-timer .countdown-timer-background .timer .timer-box-container .timer-label {
           color: #909c9a; }
 
 .love-story {
@@ -266,17 +266,17 @@ header::after {
         display: inline-block;
         margin-top: 5px; }
 
-.quote-section {
+.seuss-quote {
   width: 100%;
   height: 370px; }
-  .quote-section .quote-background {
+  .seuss-quote .quote-background {
     height: 100%;
     display: flex;
     align-items: center;
-    background: url(https://res.cloudinary.com/dzz2aiwnj/image/upload/v1533851015/cropwall_copy.jpg) center center/cover no-repeat local;
+    background: url("../../assets/images2/engagement-banner-image.jpg") center center/cover no-repeat local;
     padding-left: 3em;
     padding-right: 3em; }
-    .quote-section .quote-background .quote-text {
+    .seuss-quote .quote-background .quote-text {
       font-size: 1.6em;
       font-weight: 700;
       width: 30em;
@@ -284,7 +284,7 @@ header::after {
       font-family: 'Shadows Into Light', cursive;
       line-height: 1.5;
       letter-spacing: 0.05em; }
-      .quote-section .quote-background .quote-text .seuss {
+      .seuss-quote .quote-background .quote-text .seuss {
         margin-top: 0.7em;
         margin-left: 0.7em; }
 
@@ -403,7 +403,7 @@ header::after {
   .rsvp .rsvp-background {
     width: 100%;
     height: 100%;
-    background: url(https://res.cloudinary.com/dzz2aiwnj/image/upload/v1534448213/flowerbg-dark.jpg) center center/cover no-repeat local; }
+    background: url("../../assets/images2/rsvp-flower-bg.jpg") center center/cover no-repeat local; }
     .rsvp .rsvp-background .rsvp-title-container {
       display: flex;
       justify-content: center; }
@@ -543,7 +543,7 @@ li {
   font-family: 'Great Vibes', cursive;
   font-size: 1.8em; }
 
-.fun-begins-text {
+.join-us-text {
   font-size: 4em;
   font-family: 'Lovers Quarrel', cursive;
   color: lightgray; }
@@ -582,7 +582,7 @@ a {
   color: #daa520; }
 
 .hero-image {
-  background: url(https://res.cloudinary.com/dzz2aiwnj/image/upload/v1533787731/cropped.jpg) center center/cover no-repeat local; }
+  background: url("../../assets/images2/hero-image.jpg") center center/cover no-repeat local; }
 
 header::after {
   content: "";
@@ -604,7 +604,7 @@ header::after {
   background-color: #000033; }
   .bride-groom-container .groom-photo {
     backround-color: blue;
-    background: url(https://res.cloudinary.com/dzz2aiwnj/image/upload/v1533182760/groom.jpg) center center/cover no-repeat local; }
+    background: url("../../assets/images2/groom.jpg") center center/cover no-repeat local; }
   .bride-groom-container .groom-about-para, .bride-groom-container .bride-about-para {
     color: white; }
   .bride-groom-container .bride-about-para {
@@ -661,5 +661,9 @@ header::after {
   .question-container .question-answer-show {
     height: 57px;
     opaicty: 1; }
+
+@media screen and (min-device-width: 480px) and (max-device-width: 768px) {
+  .navigation ul li {
+    color: red; } }
 
 /*# sourceMappingURL=styles.css.map */
