@@ -927,8 +927,7 @@ header::after {
 
   .dropdown {
     position: relative;
-    display: inline-block !important;
-    float: right; }
+    display: inline-block !important; }
 
   .dropdown-content {
     display: none;
