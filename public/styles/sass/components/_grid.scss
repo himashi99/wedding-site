@@ -27,6 +27,10 @@ header {
     .navigation {
         // min-height: 70px;
 
+        @include bp (baby-bear) {
+            display: none;
+        }
+
         .nav-links {
             width: 100%;
             height: 50px;
